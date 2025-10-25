@@ -26,7 +26,7 @@ const Navbar = () => {
 
                 {/* Right Icons */}
                 <div className="flex items-center gap-4">
-                    <Link to={'/selectCart'}>
+                    <Link to={'/shopCart'}>
                         <CiShoppingCart className="text-3xl text-gray-700 hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer transition-colors" />
                     </Link>
                     <FiUser className="text-3xl text-gray-700 hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer transition-colors" />
