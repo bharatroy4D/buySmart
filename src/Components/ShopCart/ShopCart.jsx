@@ -4,7 +4,7 @@ const ShopCart = ({ cartItems = [], onClose }) => {
   const totalPrice = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-start pt-20 ">
+    <div className=" flex justify-center items-start pt-20 ">
       <div className="bg-white w-11/12 sm:w-96 rounded-xl shadow-2xl overflow-hidden">
         {/* Header */}
         <div className="flex justify-between items-center px-6 py-4 border-b bg-gray-50">
