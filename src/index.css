@@ -1,2 +1,18 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+
+.banner-slider .slick-dots {
+  bottom: 10px;
+}
+
+.banner-slider .slick-dots li button:before {
+  color: white;
+  font-size: 12px;
+}
+
+.banner-slider .slick-prev:before,
+.banner-slider .slick-next:before {
+  color: #000;
+}
