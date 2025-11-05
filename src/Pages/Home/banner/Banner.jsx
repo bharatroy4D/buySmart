@@ -14,7 +14,7 @@ const Banner = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     pauseOnHover: true,
   };
 
@@ -25,21 +25,21 @@ const Banner = () => {
           <img 
             src={banner_1} 
             alt="Smartphone Banner" 
-            className="w-full h-auto"
+            className="w-full h-[50%]"
           />
         </div>
         <div>
           <img 
             src={banner_2} 
             alt="Smartwatch Banner" 
-            className="w-full h-auto"
+            className="w-full h-[50%]"
           />
         </div>
         <div>
           <img 
             src={banner_3} 
             alt="Appliances Banner" 
-            className="w-full h-auto"
+            className="w-full h-[50%] "
           />
         </div>
       </Slider>
