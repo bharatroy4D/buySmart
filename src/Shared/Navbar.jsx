@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CiSearch, CiShoppingCart } from 'react-icons/ci';
 import { FiUser } from 'react-icons/fi';
 import { FiMenu, FiX } from 'react-icons/fi';
+import { MdOutlineShoppingCart } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -20,16 +21,16 @@ const Navbar = () => {
                     <input
                         type="text"
                         placeholder="What are you looking for..."
-                        className="w-full text-gray-700  bg-gray-100  rounded px-4 py-3 focus:outline-none focus:ring-1 focus:ring-purple-400 focus:border-transparent"
+                        className="w-full text-gray-800  bg-gray-100  rounded px-4 py-3 focus:outline-none focus:ring-1 focus:ring-purple-400 focus:border-transparent"
                     />
                 </div>
 
                 {/* Right Icons */}
                 <div className="flex items-center gap-4">
                     <Link to={'/shopCart'}>
-                        <CiShoppingCart className="text-3xl text-gray-700 hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer transition-colors" />
+                        <MdOutlineShoppingCart className="text-4xl text-gray-700 hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer transition-colors" />
                     </Link>
-                    <FiUser className="text-3xl text-gray-700 hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer transition-colors" />
+                    <FiUser className="text-4xl text-gray-700 hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer transition-colors" />
                     <button className="hidden md:block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 cursor-pointer transition-colors">
                         Register
                     </button>
