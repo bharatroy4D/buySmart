@@ -4,6 +4,7 @@ import SelectCart from "../Components/SelectCart/SelectCart";
 import Home from "../Pages/Home/Home";
 import Banner from "../Pages/Home/banner/Banner";
 import ShopCart from "../Components/ShopCart/ShopCart";
+import Register from "../Components/Register/Register";
 
 export const routes = createBrowserRouter([
     {
@@ -17,6 +18,10 @@ export const routes = createBrowserRouter([
             {
                 path: "/shopCart",
                 element: <ShopCart />
+            },
+            {
+                path: "/register",
+                element: <Register />
             },
          
         ]
