@@ -26,7 +26,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Right Icons */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-5">
                     <Link to={'/shopCart'}>
                         <MdOutlineShoppingCart className="text-4xl text-gray-700 hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer transition-colors" />
                     </Link>
