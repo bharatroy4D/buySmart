@@ -24,20 +24,7 @@ const Register = () => {
           Create an Account
         </h2>
 
-        <form onSubmit={handleSubmit} className="space-y-5">
-          {/* Name Field */}
-          <div>
-            <label className="block text-gray-800 font-medium mb-2">Full Name</label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Your full name"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400"
-              required
-            />
-          </div>
+        <form onSubmit={handleSubmit} className="space-y-5">        
 
           {/* Email Field */}
           <div>
@@ -62,20 +49,6 @@ const Register = () => {
               value={formData.password}
               onChange={handleChange}
               placeholder="Enter password"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400"
-              required
-            />
-          </div>
-
-          {/* Confirm Password */}
-          <div>
-            <label className="block text-gray-800 font-medium mb-2">Confirm Password</label>
-            <input
-              type="password"
-              name="confirmPassword"
-              value={formData.confirmPassword}
-              onChange={handleChange}
-              placeholder="Confirm password"
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400"
               required
             />
