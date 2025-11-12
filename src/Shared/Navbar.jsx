@@ -11,8 +11,8 @@ const Navbar = () => {
     <nav className="bg-cyan-800 shadow-md px-6 py-4 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="text-3xl font-bold text-purple-600 tracking-wide hover:text-purple-800 transition-colors">
-          Smart
+        <Link to="/" className="text-3xl font-bold text-white tracking-wide transition-colors">
+          Shopzen
         </Link>
 
         {/* Desktop Search Bar */}
@@ -20,18 +20,21 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="What are you looking for..."
-            className="w-full text-gray-800 bg-gray-100 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-400"
+            className="w-full text-gray-800 bg-gray-100 rounded-lg px-4 py-3 pr-12 focus:outline-none focus:ring-2 focus:ring-red-400"
           />
-          <CiSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 text-xl" />
+          <div className="absolute right-0 top-0 h-full w-12 bg-green-500 rounded-r-lg flex items-center justify-center cursor-pointer">
+            <CiSearch className="text-white text-2xl" />
+          </div>
         </div>
 
+
         {/* Right Icons */}
-        <div className="flex items-center gap-5">
+        <div className="flex items-center text-white gap-5">
           <Link to="/shopCart">
-            <MdOutlineShoppingCart className="text-3xl text-gray-700 hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer transition-colors" />
+            <MdOutlineShoppingCart className="text-3xl hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer transition-colors" />
           </Link>
 
-          <FiUser className="text-3xl text-gray-700 hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer transition-colors" />
+          <FiUser className="text-3xl hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer transition-colors" />
 
           <Link to="/register">
             <button className="hidden md:block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
