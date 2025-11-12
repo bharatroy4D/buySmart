@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
-import { FiUser, FiMenu, FiX } from "react-icons/fi";
+import { FaStore, FaUserTie } from "react-icons/fa6";
+import { FiMenu, FiX } from "react-icons/fi";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -30,17 +31,31 @@ const Navbar = () => {
 
         {/* Right Icons */}
         <div className="flex items-center text-white gap-5">
-          <Link to="/shopCart">
-            <MdOutlineShoppingCart className="text-3xl hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer transition-colors" />
+          <Link to="/shopCart" className="flex items-center gap-1.5">
+            <MdOutlineShoppingCart className="text-3xl hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer" />
+            <span className="">Cart</span>
           </Link>
 
-          <FiUser className="text-3xl hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer transition-colors" />
-
+          <Link to={'/seller'} className="flex items-center gap-1.5">
+            <FaStore className="text-3xl hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 " />
+            <span className="">Become a Seller</span>
+          </Link>
           <Link to="/register">
-            <button className="hidden md:block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+            <button
+              className="
+              bg-purple-600 
+              text-white 
+              px-4 py-2 
+              rounded-lg 
+              hover:bg-purple-700
+              focus:outline-none
+              hidden md:block
+    "
+            >
               Register
             </button>
           </Link>
+
 
           {/* Mobile Menu Button */}
           <button

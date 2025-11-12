@@ -1,7 +1,7 @@
 [
   {
-    "id": 101,
-    "name": "Apple iPhone 14 Pro",
+    "id": 1,
+    "name": "Maltimedia",
     "description": "6.1-inch Super Retina XDR display, A16 Bionic chip, 48MP triple camera system.",
     "price": 999,
     "discount": 8,
@@ -9,14 +9,11 @@
     "stock": 14,
     "brand": "Apple",
     "category": "Electronics",
-    "images": [
-      "https://i.ibb.co/BCrRj3D/iphone14-1.jpg",
-      "https://i.ibb.co/fM1pvsd/iphone14-2.jpg"
-    ]
+    "images": "https://rukminim2.flixcart.com/image/240/240/xif0q/projector/k/x/s/duster-5x-pro-automatic-projector-sealed-engine-500-iso-android-original-imahhffwzhsdd5ge.jpeg?q=60"
   },
   {
-    "id": 102,
-    "name": "Samsung Galaxy S23 Ultra",
+    "id": 2,
+    "name": "Monitor",
     "description": "AMOLED 6.8-inch display, Snapdragon 8 Gen 2, 200MP pro-grade camera.",
     "price": 899,
     "discount": 12,
@@ -24,14 +21,11 @@
     "stock": 20,
     "brand": "Samsung",
     "category": "Electronics",
-    "images": [
-      "https://i.ibb.co/5T5F0Mf/s23ultra-1.jpg",
-      "https://i.ibb.co/ckpBLfm/s23ultra-2.jpg"
-    ]
+    "images": "https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/w/i/f/-original-imahagy2cefszqgy.jpeg?q=60"
   },
   {
-    "id": 103,
-    "name": "Sony WH-1000XM5 Wireless Headphones",
+    "id": 3,
+    "name": "Watch",
     "description": "Industry-leading noise cancellation with high resolution audio.",
     "price": 349,
     "discount": 10,
@@ -39,14 +33,11 @@
     "stock": 32,
     "brand": "Sony",
     "category": "Electronics",
-    "images": [
-      "https://i.ibb.co/RyXKk6t/sonywh1000-1.jpg",
-      "https://i.ibb.co/F0yzYz3/sonywh1000-2.jpg"
-    ]
+    "images": "https://rukminim2.flixcart.com/image/240/240/xif0q/smartwatch/5/v/s/-original-imagxrhetgfuebnn.jpeg?q=60"
   },
   {
-    "id": 104,
-    "name": "Apple MacBook Air M2",
+    "id": 4,
+    "name": "Camera",
     "description": "13.6-inch Liquid Retina Display with M2 chip for exceptional performance.",
     "price": 1199,
     "discount": 5,
@@ -54,14 +45,11 @@
     "stock": 9,
     "brand": "Apple",
     "category": "Electronics",
-    "images": [
-      "https://i.ibb.co/8xr6HFh/macbookair-1.jpg",
-      "https://i.ibb.co/s3VSv7L/macbookair-2.jpg"
-    ]
+    "images": "https://rukminim2.flixcart.com/image/240/240/xif0q/camera/s/o/y/na-digital-kids-camera-20mp-1080p-32gb-card-supported-mini-original-imagy2znwq4uy4z8.jpeg?q=60"
   },
   {
-    "id": 105,
-    "name": "Dell XPS 15",
+    "id": 5,
+    "name": "Ear Phone",
     "description": "15.6-inch InfinityEdge display with Intel Core i7 and NVIDIA RTX graphics.",
     "price": 1599,
     "discount": 7,
@@ -69,13 +57,10 @@
     "stock": 6,
     "brand": "Dell",
     "category": "Electronics",
-    "images": [
-      "https://i.ibb.co/8x3C5dk/dellxps15-1.jpg",
-      "https://i.ibb.co/9NnrmfZ/dellxps15-2.jpg"
-    ]
+    "images": "https://rukminim2.flixcart.com/image/240/240/l58iaa80/headphone/k/z/m/nord-buds-ce-oneplus-original-imagfyk4hyvgg6ze.jpeg?q=60"
   },
   {
-    "id": 106,
+    "id": 6,
     "name": "Canon EOS R50 Mirrorless Camera",
     "description": "24.2MP APS-C sensor, 4K video recording and advanced autofocus.",
     "price": 749,
@@ -84,13 +69,10 @@
     "stock": 18,
     "brand": "Canon",
     "category": "Electronics",
-    "images": [
-      "https://i.ibb.co/VwqDcxB/canonr50-1.jpg",
-      "https://i.ibb.co/chYFgKK/canonr50-2.jpg"
-    ]
+    "images": ["xxx"]
   },
   {
-    "id": 107,
+    "id": 7,
     "name": "Logitech MX Master 3S Mouse",
     "description": "Ergonomic wireless mouse with ultra-fast scrolling and customizable buttons.",
     "price": 99,
@@ -99,13 +81,10 @@
     "stock": 50,
     "brand": "Logitech",
     "category": "Electronics",
-    "images": [
-      "https://i.ibb.co/0cNW0N5/mxmaster3-1.jpg",
-      "https://i.ibb.co/3MPfgSv/mxmaster3-2.jpg"
-    ]
+    "images": ["xxx"]
   },
   {
-    "id": 108,
+    "id": 8,
     "name": "JBL Charge 5 Portable Speaker",
     "description": "Powerful bass, waterproof design, and 20 hours of playtime.",
     "price": 139,
@@ -114,13 +93,10 @@
     "stock": 35,
     "brand": "JBL",
     "category": "Electronics",
-    "images": [
-      "https://i.ibb.co/zZZYy7Y/jblcharge5-1.jpg",
-      "https://i.ibb.co/VCffWnQ/jblcharge5-2.jpg"
-    ]
+    "images": ["xxx"]
   },
   {
-    "id": 109,
+    "id": 9,
     "name": "Mi Smart Band 8",
     "description": "Fitness tracking smart band with AMOLED screen and 100+ sports modes.",
     "price": 39,
@@ -129,9 +105,138 @@
     "stock": 100,
     "brand": "Xiaomi",
     "category": "Electronics",
-    "images": [
-      "https://i.ibb.co/bFnYQ1k/miband8-1.jpg",
-      "https://i.ibb.co/d0stVgC/miband8-2.jpg"
-    ]
+    "images": ["xxx"]
+  },
+  {
+    "id": 10,
+    "name": "HP Spectre x360",
+    "description": "13.5-inch 2-in-1 laptop with Intel Core i7 and long battery life.",
+    "price": 1299,
+    "discount": 6,
+    "rating": 4.6,
+    "stock": 12,
+    "brand": "HP",
+    "category": "Electronics",
+    "images": ["xxx"]
+  },
+  {
+    "id": 11,
+    "name": "OnePlus 11",
+    "description": "6.7-inch AMOLED display, Snapdragon 8 Gen 2, 50MP triple camera.",
+    "price": 799,
+    "discount": 10,
+    "rating": 4.5,
+    "stock": 25,
+    "brand": "OnePlus",
+    "category": "Electronics",
+    "images": ["xxx"]
+  },
+  {
+    "id": 12,
+    "name": "Bose QuietComfort Earbuds II",
+    "description": "Noise cancelling wireless earbuds with premium sound.",
+    "price": 299,
+    "discount": 12,
+    "rating": 4.7,
+    "stock": 30,
+    "brand": "Bose",
+    "category": "Electronics",
+    "images": ["xxx"]
+  },
+  {
+    "id": 13,
+    "name": "Samsung Galaxy Tab S9",
+    "description": "11-inch AMOLED tablet with Snapdragon 8 Gen 2 and S Pen support.",
+    "price": 649,
+    "discount": 8,
+    "rating": 4.6,
+    "stock": 22,
+    "brand": "Samsung",
+    "category": "Electronics",
+    "images": ["xxx"]
+  },
+  {
+    "id": 14,
+    "name": "Apple Watch Series 9",
+    "description": "Advanced health tracking with Always-On Retina display.",
+    "price": 399,
+    "discount": 7,
+    "rating": 4.8,
+    "stock": 40,
+    "brand": "Apple",
+    "category": "Electronics",
+    "images": ["xxx"]
+  },
+  {
+    "id": 15,
+    "name": "Sony PlayStation 5",
+    "description": "Next-gen gaming console with 4K gaming and fast SSD.",
+    "price": 499,
+    "discount": 5,
+    "rating": 4.9,
+    "stock": 15,
+    "brand": "Sony",
+    "category": "Electronics",
+    "images": ["xxx"]
+  },
+  {
+    "id": 16,
+    "name": "Microsoft Xbox Series X",
+    "description": "Powerful gaming console with 4K and 120fps support.",
+    "price": 499,
+    "discount": 5,
+    "rating": 4.8,
+    "stock": 18,
+    "brand": "Microsoft",
+    "category": "Electronics",
+    "images": ["xxx"]
+  },
+  {
+    "id": 17,
+    "name": "Kindle Paperwhite",
+    "description": "Waterproof e-reader with high-resolution display and long battery life.",
+    "price": 129,
+    "discount": 15,
+    "rating": 4.7,
+    "stock": 60,
+    "brand": "Amazon",
+    "category": "Electronics",
+    "images": ["xxx"]
+  },
+  {
+    "id": 18,
+    "name": "Garmin Forerunner 955",
+    "description": "Advanced GPS running watch with heart rate monitoring.",
+    "price": 499,
+    "discount": 10,
+    "rating": 4.6,
+    "stock": 28,
+    "brand": "Garmin",
+    "category": "Electronics",
+    "images": ["xxx"]
+  },
+  {
+    "id": 19,
+    "name": "Razer BlackWidow V3",
+    "description": "Mechanical gaming keyboard with customizable RGB lighting.",
+    "price": 139,
+    "discount": 12,
+    "rating": 4.5,
+    "stock": 45,
+    "brand": "Razer",
+    "category": "Electronics",
+    "images": ["xxx"]
+  },
+  {
+    "id": 20,
+    "name": "Logitech G502 HERO Mouse",
+    "description": "High-performance gaming mouse with 16,000 DPI sensor.",
+    "price": 79,
+    "discount": 10,
+    "rating": 4.7,
+    "stock": 55,
+    "brand": "Logitech",
+    "category": "Electronics",
+    "images": ["xxx"]
   }
 ]
