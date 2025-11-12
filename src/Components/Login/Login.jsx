@@ -20,7 +20,7 @@ const Login = () => {
       <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8">
         
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">
-          Welcome Back
+        Login
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-5">
