@@ -5,7 +5,7 @@ import TopDeals from '../../Components/TopDeals/TopDeals';
 const Home = () => {
     return (
         <div>
-            {/* <Banner /> */}
+            <Banner />
             <TopDeals />
         </div>
     );

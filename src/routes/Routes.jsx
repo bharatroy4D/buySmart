@@ -14,7 +14,7 @@ export const routes = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Banner />
+                element: <Home />
             },
             {
                 path: "/shopCart",
