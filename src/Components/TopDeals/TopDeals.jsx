@@ -13,7 +13,7 @@ const TopDeals = () => {
   return (
     <div className="container px-5 mx-auto py-6">
       <h2 className="text-2xl font-medium mb-6">Top Deals</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-5 ">
         {products.slice(0, 6).map((product) => (
           <div
             key={product.id}
@@ -22,7 +22,7 @@ const TopDeals = () => {
             <img
               src={product.images}
               alt={product.name}
-              className="w-44 h-48 object-content mb-3 rounded"
+              className="w-40 h-40 object-content mb-3 rounded"
             />
           
           </div>
