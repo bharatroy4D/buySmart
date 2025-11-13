@@ -11,18 +11,18 @@ const TopDeals = () => {
   }, []);
 
   return (
-    <div className="top-deals px-4 py-6">
-      <h2 className="text-2xl font-bold mb-6">Top Deals</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-        {products.slice(0, 5).map((product) => (
+    <div className="container px-5 mx-auto py-6">
+      <h2 className="text-2xl font-medium mb-6">Top Deals</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3 ">
+        {products.slice(0, 6).map((product) => (
           <div
             key={product.id}
-            className=" rounded-lg shadow hover:shadow-lg transition"
+            className=" rounded-lg shadow hover:shadow-lg transition bg-white"
           >
             <img
               src={product.images}
               alt={product.name}
-              className="w-64 h-52 object-content mb-3 rounded"
+              className="w-44 h-48 object-content mb-3 rounded"
             />
           
           </div>

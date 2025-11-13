@@ -4,7 +4,7 @@ import TopDeals from '../../Components/TopDeals/TopDeals';
 
 const Home = () => {
     return (
-        <div>
+        <div className='bg-'>
             <Banner />
             <TopDeals />
         </div>

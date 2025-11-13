@@ -61,7 +61,7 @@
   },
   {
     "id": 6,
-    "name": "Canon EOS R50 Mirrorless Camera",
+    "name": "Printer",
     "description": "24.2MP APS-C sensor, 4K video recording and advanced autofocus.",
     "price": 749,
     "discount": 9,
@@ -69,7 +69,7 @@
     "stock": 18,
     "brand": "Canon",
     "category": "Electronics",
-    "images": ["xxx"]
+    "images": "https://rukminim2.flixcart.com/image/240/240/jpmxuvk0/printer-refurbished/z/r/z/u-ts207-canon-original-imafbu3xpytszpgx.jpeg?q=60"
   },
   {
     "id": 7,

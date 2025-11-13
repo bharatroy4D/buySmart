@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
+import { FaRegUserCircle } from "react-icons/fa";
 import { FaStore, FaUserTie } from "react-icons/fa6";
 import { FiMenu, FiX } from "react-icons/fi";
 import { MdOutlineShoppingCart } from "react-icons/md";
@@ -9,8 +10,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-cyan-800 shadow-md px-6 py-4 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+    <nav className="bg-cyan-800 shadow-md px-5 py-4 sticky top-0 z-50">
+      <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-3xl font-bold text-white tracking-wide transition-colors">
           Shopzen
@@ -30,7 +31,7 @@ const Navbar = () => {
 
 
         {/* Right Icons */}
-        <div className="flex items-center text-white gap-5">
+        <div className="flex items-center text-white gap-7">
           <Link to="/shopCart" className="flex items-center gap-1.5">
             <MdOutlineShoppingCart className="text-3xl hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 cursor-pointer" />
             <span className="">Cart</span>
@@ -40,19 +41,11 @@ const Navbar = () => {
             <FaStore className="text-3xl hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 " />
             <span className="">Become a Seller</span>
           </Link>
-          <Link to="/register">
-            <button
-              className="
-              bg-purple-600 
-              text-white 
-              px-4 py-2 
-              rounded-lg 
-              hover:bg-purple-700
-              focus:outline-none
-              hidden md:block
-    "
-            >
-              Register
+          <Link to="/login" className="flex items-center gap-3">
+          <FaRegUserCircle className="text-xl" />
+
+            <button>
+              Login
             </button>
           </Link>
 
