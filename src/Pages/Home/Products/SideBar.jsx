@@ -19,7 +19,7 @@ const categories = [
 
 const SideBar = () => {
   return (
-    <div className="w-full md:w-[25%] border rounded-xl border-green-500 shadow-md p-4">
+    <div className="w-full md:w-[25%] border rounded border-green-500 shadow-md p-4">
       {/* Header */}
       <h1 className="flex items-center gap-2 font-semibold text-lg text-green-700 border-b pb-2 mb-3">
         <PiGridFourFill className="text-green-600 text-xl" />

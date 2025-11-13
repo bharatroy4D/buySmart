@@ -73,7 +73,7 @@
   },
   {
     "id": 7,
-    "name": "Logitech MX Master 3S Mouse",
+    "name": "Smart Watch",
     "description": "Ergonomic wireless mouse with ultra-fast scrolling and customizable buttons.",
     "price": 99,
     "discount": 15,
@@ -81,11 +81,11 @@
     "stock": 50,
     "brand": "Logitech",
     "category": "Electronics",
-    "images": ["xxx"]
+    "images": "https://rukminim2.flixcart.com/image/612/612/xif0q/watch/y/1/r/1-miller-triple-dial-square-analog-silicone-strap-inovito-boys-original-imaheeh4gpgbheg5.jpeg?q=70"
   },
   {
     "id": 8,
-    "name": "JBL Charge 5 Portable Speaker",
+    "name": "HP-Laptop",
     "description": "Powerful bass, waterproof design, and 20 hours of playtime.",
     "price": 139,
     "discount": 13,
@@ -93,79 +93,82 @@
     "stock": 35,
     "brand": "JBL",
     "category": "Electronics",
-    "images": ["xxx"]
+    "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/e/x/8/inspiron-5440-thin-and-light-laptop-dell-original-imahergyhvuezy2g.jpeg?q=70"
   },
   {
     "id": 9,
     "name": "Mi Smart Band 8",
-    "description": "Fitness tracking smart band with AMOLED screen and 100+ sports modes.",
+    "description": "Stylish Addition - Readymad Couching Stitch Embroidery work",
     "price": 39,
     "discount": 20,
     "rating": 4.4,
     "stock": 100,
     "brand": "Xiaomi",
-    "category": "Electronics",
-    "images": ["xxx"]
+    "category": "Cloth",
+    "images": "https://img.drz.lazcdn.com/static/bd/p/aeda8c28445ed69734f0589eae54e267.jpg_400x400q75.avif"
   },
   {
     "id": 10,
     "name": "HP Spectre x360",
-    "description": "13.5-inch 2-in-1 laptop with Intel Core i7 and long battery life.",
+    "description": "Exclusive Unstitched Three piece collection with computer.",
     "price": 1299,
     "discount": 6,
     "rating": 4.6,
     "stock": 12,
     "brand": "HP",
-    "category": "Electronics",
-    "images": ["xxx"]
+    "category": "Cloth",
+    "images": "https://img.drz.lazcdn.com/static/bd/p/52b86de3426cb4a998e67642e06dd9fb.jpg_400x400q75.avif"
   },
   {
     "id": 11,
     "name": "OnePlus 11",
-    "description": "6.7-inch AMOLED display, Snapdragon 8 Gen 2, 50MP triple camera.",
+    "description": "Chunri Screen Print Linen Gown – 2-Piece Long Kurti Set",
     "price": 799,
     "discount": 10,
     "rating": 4.5,
     "stock": 25,
     "brand": "OnePlus",
-    "category": "Electronics",
-    "images": ["xxx"]
+    "category": "Cloth",
+    "images": "https://img.drz.lazcdn.com/static/bd/p/e8672cbcdf3c4e1fdcd70629c9b61683.jpg_400x400q75.avif"
   },
   {
     "id": 12,
     "name": "Bose QuietComfort Earbuds II",
-    "description": "Noise cancelling wireless earbuds with premium sound.",
+    "description": "Fashion 2026 New Jarsi High Quality full sleeve T-Shirt For Men .",
     "price": 299,
     "discount": 12,
     "rating": 4.7,
     "stock": 30,
     "brand": "Bose",
-    "category": "Electronics",
-    "images": ["xxx"]
+    "category": "Cloth",
+    "images": "https://img.drz.lazcdn.com/static/bd/p/ce93a126dab7352d3026a573b17e116f.jpg_400x400q75.avif"
+
   },
   {
     "id": 13,
     "name": "Samsung Galaxy Tab S9",
-    "description": "11-inch AMOLED tablet with Snapdragon 8 Gen 2 and S Pen support.",
+    "description": "Fashion Short Sleeve T-Shirt For Man",
     "price": 649,
     "discount": 8,
     "rating": 4.6,
     "stock": 22,
     "brand": "Samsung",
-    "category": "Electronics",
-    "images": ["xxx"]
+    "category": "Cloth",
+    "images": "https://img.drz.lazcdn.com/static/bd/p/e734f7a6e1faf4e2f4fb10d5f33ca836.jpg_400x400q75.avif"
+
   },
   {
     "id": 14,
     "name": "Apple Watch Series 9",
-    "description": "Advanced health tracking with Always-On Retina display.",
+    "description": "New Stylish Premium Quality Long Sleeve Casual Check Shirt For",
     "price": 399,
     "discount": 7,
     "rating": 4.8,
     "stock": 40,
     "brand": "Apple",
-    "category": "Electronics",
-    "images": ["xxx"]
+    "category": "Cloth",
+    "images": "https://www.daraz.com.bd/catalog/?q=shirt"
+
   },
   {
     "id": 15,
@@ -177,7 +180,9 @@
     "stock": 15,
     "brand": "Sony",
     "category": "Electronics",
-    "images": ["xxx"]
+    "images": [
+      "xxx"
+    ]
   },
   {
     "id": 16,
@@ -189,7 +194,9 @@
     "stock": 18,
     "brand": "Microsoft",
     "category": "Electronics",
-    "images": ["xxx"]
+    "images": [
+      "xxx"
+    ]
   },
   {
     "id": 17,
@@ -201,7 +208,9 @@
     "stock": 60,
     "brand": "Amazon",
     "category": "Electronics",
-    "images": ["xxx"]
+    "images": [
+      "xxx"
+    ]
   },
   {
     "id": 18,
@@ -213,7 +222,9 @@
     "stock": 28,
     "brand": "Garmin",
     "category": "Electronics",
-    "images": ["xxx"]
+    "images": [
+      "xxx"
+    ]
   },
   {
     "id": 19,
@@ -225,7 +236,9 @@
     "stock": 45,
     "brand": "Razer",
     "category": "Electronics",
-    "images": ["xxx"]
+    "images": [
+      "xxx"
+    ]
   },
   {
     "id": 20,
@@ -237,6 +250,8 @@
     "stock": 55,
     "brand": "Logitech",
     "category": "Electronics",
-    "images": ["xxx"]
+    "images": [
+      "xxx"
+    ]
   }
 ]
