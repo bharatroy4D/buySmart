@@ -2,7 +2,7 @@ import React from 'react';
 
 const MainProducts = () => {
     return (
-        <div>
+        <div className='w-[70%] border'>
             
         </div>
     );
