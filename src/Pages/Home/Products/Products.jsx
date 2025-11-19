@@ -4,7 +4,7 @@ import MainProducts from './MainProducts';
 
 const Products = () => {
     return (
-        <div className='container flex gap-10 px-5 py-6 mx-auto w-full '>
+        <div className="container mx-auto px-5 py-8 flex flex-col md:flex-row gap-8">
             <SideBar />
             <MainProducts />
         </div>
