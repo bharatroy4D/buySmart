@@ -4,7 +4,6 @@ const MainProducts = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Fetch products.json
   useEffect(() => {
     fetch("/products.json")
       .then((res) => res.json())
@@ -12,9 +11,7 @@ const MainProducts = () => {
         setProducts(data);
         setLoading(false);
       })
-      .catch(() => {
-        setLoading(false);
-      });
+      .catch(() => setLoading(false));
   }, []);
 
   if (loading) {
@@ -33,35 +30,43 @@ const MainProducts = () => {
         {products.map((product) => (
           <div
             key={product.id}
-            className="border rounded-xl shadow-sm p-3 bg-white hover:shadow-lg transition-all duration-300 cursor-pointer"
+            className="group border rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300"
           >
-            <img
-              src={product.images}
-              alt={product.name}
-              className="w-full h-40 object-cover rounded-lg mb-3"
-            />
+            {/* Product Image */}
+            <div className="relative">
+              <img
+                src={product.images}
+                alt={product.name}
+                className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
 
-            <h3 className="text-sm font-semibold text-gray-900">{product.name}</h3>
-
-            <p className="text-[13px] text-gray-500 mt-1 line-clamp-2">
-              {product.description}
-            </p>
-
-            <div className="mt-2 flex items-center justify-between">
-              <p className="text-green-600 font-bold text-sm">
-                ${product.price}
-              </p>
-
-              <p className="text-xs text-orange-500 font-medium">
+              {/* Discount Badge */}
+              <span className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded-lg shadow-md">
                 -{product.discount}% OFF
-              </p>
+              </span>
             </div>
 
-            <p className="text-yellow-500 text-sm mt-1">
-              ⭐ {product.rating}
-            </p>
+            {/* Content */}
+            <div className="p-3">
+              <h3 className="text-sm font-semibold text-gray-900 group-hover:text-green-600 transition">
+                {product.name}
+              </h3>
 
-          
+              <p className="text-[13px] text-gray-500 mt-1 line-clamp-2">
+                {product.description}
+              </p>
+
+              {/* Price & Rating */}
+              <div className="mt-3 flex items-center justify-between">
+                <p className="text-green-700 font-bold text-sm">
+                  ${product.price}
+                </p>
+
+                <p className="text-yellow-500 text-sm font-medium">
+                  ⭐ {product.rating}
+                </p>
+              </div>            
+            </div>
           </div>
         ))}
       </div>
