@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const MainProducts = () => {
+const MainProducts = ({ category }) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -22,33 +22,36 @@ const MainProducts = () => {
     );
   }
 
+  // Category Filter
+  const filteredProducts =
+    category === "All Categories"
+      ? products
+      : products.filter((p) => p.category === category);
+
   return (
     <div className="w-full md:w-[80%]">
-      <h2 className="text-xl font-semibold mb-5">All Products</h2>
+      <h2 className="text-xl font-semibold mb-5">{category}</h2>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {products.map((product) => (
+        {filteredProducts.map((product) => (
           <div
             key={product.id}
-            className="group border rounded overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300"
+            className="group border rounded-xl overflow-hidden bg-white shadow-md hover:shadow-lg transition duration-300"
           >
-            {/* Product Image */}
             <div className="relative">
               <img
                 src={product.images}
                 alt={product.name}
-                className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-40 object-cover group-hover:scale-110 transition duration-500"
               />
 
-              {/* Discount Badge */}
-              <span className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded-lg shadow-md">
+              <span className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded-lg">
                 -{product.discount}% OFF
               </span>
             </div>
 
-            {/* Content */}
             <div className="p-3">
-              <h3 className="text-sm font-semibold text-gray-900 group-hover:text-green-600 transition">
+              <h3 className="text-sm font-semibold text-gray-900 group-hover:text-green-600">
                 {product.name}
               </h3>
 
@@ -56,16 +59,10 @@ const MainProducts = () => {
                 {product.description}
               </p>
 
-              {/* Price & Rating */}
               <div className="mt-3 flex items-center justify-between">
-                <p className="text-green-700 font-bold text-sm">
-                  ${product.price}
-                </p>
-
-                <p className="text-yellow-500 text-sm font-medium">
-                  ⭐ {product.rating}
-                </p>
-              </div>            
+                <p className="text-green-700 font-bold text-sm">${product.price}</p>
+                <p className="text-yellow-500 text-sm">⭐ {product.rating}</p>
+              </div>
             </div>
           </div>
         ))}
