@@ -24,7 +24,7 @@ const Navbar = () => {
             placeholder="What are you looking for..."
             className="w-full text-gray-800 bg-gray-100 rounded-lg px-4 py-3 pr-12 focus:outline-none focus:ring-2 focus:ring-red-400"
           />
-          <div className="absolute right-0 top-0 h-full w-12 bg-green-500 rounded-r-lg flex items-center justify-center cursor-pointer">
+          <div className="absolute right-0 top-0 h-full w-12 bg-blue-700 rounded-r-lg flex items-center justify-center cursor-pointer">
             <CiSearch className="text-white text-2xl" />
           </div>
         </div>

@@ -179,10 +179,9 @@
     "rating": 4.9,
     "stock": 15,
     "brand": "Sony",
-    "category": "Electronics",
-    "images": [
-      "xxx"
-    ]
+    "category": "Groceries",
+    "images": "https://img.drz.lazcdn.com/static/bd/p/f9da4cfabcf79f513c7b0e2596352300.png_400x400q75.avif"
+    
   },
   {
     "id": 16,
@@ -193,10 +192,9 @@
     "rating": 4.8,
     "stock": 18,
     "brand": "Microsoft",
-    "category": "Electronics",
-    "images": [
-      "xxx"
-    ]
+    "category": "Groceries",
+    "images": "https://img.drz.lazcdn.com/static/bd/p/e17764860405ee9870e5330130696c88.jpg_400x400q75.avif"
+
   },
   {
     "id": 17,
@@ -207,10 +205,9 @@
     "rating": 4.7,
     "stock": 60,
     "brand": "Amazon",
-    "category": "Electronics",
-    "images": [
-      "xxx"
-    ]
+    "category": "Groceries",
+    "images": "https://img.drz.lazcdn.com/static/bd/p/1a1e3f07750dfad73e3cb7cafcd6b921.png_400x400q75.avif"
+  
   },
   {
     "id": 18,
@@ -221,10 +218,9 @@
     "rating": 4.6,
     "stock": 28,
     "brand": "Garmin",
-    "category": "Electronics",
-    "images": [
-      "xxx"
-    ]
+    "category": "Groceries",
+    "images": "https://img.drz.lazcdn.com/collect/sg/p/e07b0c3b9286028e723b63e0f90fc70e.jpg_400x400q75.avif"
+
   },
   {
     "id": 19,
@@ -235,10 +231,9 @@
     "rating": 4.5,
     "stock": 45,
     "brand": "Razer",
-    "category": "Electronics",
-    "images": [
-      "xxx"
-    ]
+    "category": "Groceries",
+    "images":"https://img.drz.lazcdn.com/collect/sg/p/d19864650330e7fb381617ab75335cad.jpg_400x400q75.avif"
+  
   },
   {
     "id": 20,
@@ -249,9 +244,8 @@
     "rating": 4.7,
     "stock": 55,
     "brand": "Logitech",
-    "category": "Electronics",
-    "images": [
-      "xxx"
-    ]
+    "category": "Groceries",
+    "images": "https://img.drz.lazcdn.com/static/bd/p/c651b2582387178405e63d6f57d84004.jpg_400x400q75.avif"
+
   }
 ]
