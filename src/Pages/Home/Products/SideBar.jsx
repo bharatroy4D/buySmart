@@ -19,7 +19,7 @@ const categories = [
 
 const SideBar = () => {
   return (
-    <div className="w-full md:w-[25%] border rounded-xl border-gray-200 shadow-md p-5 bg-white sticky top-5 h-fit">
+    <div className="w-full md:w-[20%] border rounded-xl border-gray-200 shadow-md p-5 bg-white sticky top-5 h-fit">
 
       {/* Sidebar Title */}
       <h1 className="text-xl font-semibold mb-4 border-b pb-2">

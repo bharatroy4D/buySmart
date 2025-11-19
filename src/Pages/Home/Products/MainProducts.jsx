@@ -26,7 +26,7 @@ const MainProducts = () => {
   }
 
   return (
-    <div className="w-full md:w-[75%]">
+    <div className="w-full md:w-[80%]">
       <h2 className="text-xl font-semibold mb-5">All Products</h2>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -61,9 +61,7 @@ const MainProducts = () => {
               ⭐ {product.rating}
             </p>
 
-            <button className="mt-3 w-full py-2 bg-green-600 text-white rounded-lg text-sm hover:bg-green-700 transition">
-              Add to Cart
-            </button>
+          
           </div>
         ))}
       </div>

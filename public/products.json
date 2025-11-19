@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "name": "Maltimedia",
-    "description": "6.1-inch Super Retina XDR display, A16 Bionic chip, 48MP triple camera system.",
+    "name": "5X Pro Automatic Mini Projector",
+    "description": "Compact automatic projector with sealed engine and 500 ISO brightness.",
     "price": 999,
     "discount": 8,
     "rating": 4.9,
     "stock": 14,
-    "brand": "Apple",
+    "brand": "Duster",
     "category": "Electronics",
     "images": "https://rukminim2.flixcart.com/image/240/240/xif0q/projector/k/x/s/duster-5x-pro-automatic-projector-sealed-engine-500-iso-android-original-imahhffwzhsdd5ge.jpeg?q=60"
   },
   {
     "id": 2,
-    "name": "Monitor",
-    "description": "AMOLED 6.8-inch display, Snapdragon 8 Gen 2, 200MP pro-grade camera.",
+    "name": "Samsung 24-inch LED Monitor",
+    "description": "Full HD LED monitor with vivid colors and ultra-slim design.",
     "price": 899,
     "discount": 12,
     "rating": 4.8,
@@ -25,8 +25,8 @@
   },
   {
     "id": 3,
-    "name": "Watch",
-    "description": "Industry-leading noise cancellation with high resolution audio.",
+    "name": "Smart Fitness Watch",
+    "description": "Premium smart watch featuring fitness tracking and heart rate monitor.",
     "price": 349,
     "discount": 10,
     "rating": 4.7,
@@ -37,8 +37,8 @@
   },
   {
     "id": 4,
-    "name": "Camera",
-    "description": "13.6-inch Liquid Retina Display with M2 chip for exceptional performance.",
+    "name": "Kids Digital Camera",
+    "description": "1080p kids digital camera with 20MP sensor and mini durable body.",
     "price": 1199,
     "discount": 5,
     "rating": 4.9,
@@ -49,20 +49,20 @@
   },
   {
     "id": 5,
-    "name": "Ear Phone",
-    "description": "15.6-inch InfinityEdge display with Intel Core i7 and NVIDIA RTX graphics.",
+    "name": "OnePlus Nord Buds CE",
+    "description": "Ultra-light earbuds with punchy bass and long battery backup.",
     "price": 1599,
     "discount": 7,
     "rating": 4.6,
     "stock": 6,
-    "brand": "Dell",
+    "brand": "OnePlus",
     "category": "Electronics",
     "images": "https://rukminim2.flixcart.com/image/240/240/l58iaa80/headphone/k/z/m/nord-buds-ce-oneplus-original-imagfyk4hyvgg6ze.jpeg?q=60"
   },
   {
     "id": 6,
-    "name": "Printer",
-    "description": "24.2MP APS-C sensor, 4K video recording and advanced autofocus.",
+    "name": "Canon Pixma TS207 Printer",
+    "description": "Compact inkjet printer suitable for everyday printing at home.",
     "price": 749,
     "discount": 9,
     "rating": 4.5,
@@ -73,32 +73,32 @@
   },
   {
     "id": 7,
-    "name": "Smart Watch",
-    "description": "Ergonomic wireless mouse with ultra-fast scrolling and customizable buttons.",
+    "name": "Inovito Triple Dial Analog Watch",
+    "description": "Premium silicone strap watch with triple dial and modern design.",
     "price": 99,
     "discount": 15,
     "rating": 4.6,
     "stock": 50,
-    "brand": "Logitech",
+    "brand": "Inovito",
     "category": "Electronics",
     "images": "https://rukminim2.flixcart.com/image/612/612/xif0q/watch/y/1/r/1-miller-triple-dial-square-analog-silicone-strap-inovito-boys-original-imaheeh4gpgbheg5.jpeg?q=70"
   },
   {
     "id": 8,
-    "name": "HP-Laptop",
-    "description": "Powerful bass, waterproof design, and 20 hours of playtime.",
+    "name": "Dell Inspiron 5440 Laptop",
+    "description": "Thin and light laptop featuring high performance and long battery life.",
     "price": 139,
     "discount": 13,
     "rating": 4.7,
     "stock": 35,
-    "brand": "JBL",
+    "brand": "Dell",
     "category": "Electronics",
     "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/e/x/8/inspiron-5440-thin-and-light-laptop-dell-original-imahergyhvuezy2g.jpeg?q=70"
   },
   {
     "id": 9,
-    "name": "Mi Smart Band 8",
-    "description": "Stylish Addition - Readymad Couching Stitch Embroidery work",
+    "name": "Men’s Stylish T-Shirt",
+    "description": "High-quality casual wear t-shirt for men with premium stitching.",
     "price": 39,
     "discount": 20,
     "rating": 4.4,
@@ -109,8 +109,8 @@
   },
   {
     "id": 10,
-    "name": "HP Spectre x360",
-    "description": "Exclusive Unstitched Three piece collection with computer.",
+    "name": "Exclusive Three-Piece Dress",
+    "description": "Premium quality unstitched three-piece dress for women.",
     "price": 1299,
     "discount": 6,
     "rating": 4.6,
@@ -121,8 +121,8 @@
   },
   {
     "id": 11,
-    "name": "OnePlus 11",
-    "description": "Chunri Screen Print Linen Gown – 2-Piece Long Kurti Set",
+    "name": "Women’s Printed Kurti Set",
+    "description": "Chunri screen print kurti with premium linen fabric.",
     "price": 799,
     "discount": 10,
     "rating": 4.5,
@@ -133,8 +133,8 @@
   },
   {
     "id": 12,
-    "name": "Bose QuietComfort Earbuds II",
-    "description": "Fashion 2026 New Jarsi High Quality full sleeve T-Shirt For Men .",
+    "name": "Men’s Jersey Full Sleeve T-shirt",
+    "description": "High-quality jersey fabric full sleeve t-shirt for men.",
     "price": 299,
     "discount": 12,
     "rating": 4.7,
@@ -142,12 +142,11 @@
     "brand": "Bose",
     "category": "Cloth",
     "images": "https://img.drz.lazcdn.com/static/bd/p/ce93a126dab7352d3026a573b17e116f.jpg_400x400q75.avif"
-
   },
   {
     "id": 13,
-    "name": "Samsung Galaxy Tab S9",
-    "description": "Fashion Short Sleeve T-Shirt For Man",
+    "name": "Short Sleeve Men’s T-shirt",
+    "description": "Comfortable and stylish t-shirt perfect for everyday wear.",
     "price": 649,
     "discount": 8,
     "rating": 4.6,
@@ -155,25 +154,23 @@
     "brand": "Samsung",
     "category": "Cloth",
     "images": "https://img.drz.lazcdn.com/static/bd/p/e734f7a6e1faf4e2f4fb10d5f33ca836.jpg_400x400q75.avif"
-
   },
   {
     "id": 14,
-    "name": "Apple Watch Series 9",
-    "description": "New Stylish Premium Quality Long Sleeve Casual Check Shirt For",
+    "name": "Checked Casual Men’s Shirt",
+    "description": "Comfortable long sleeve checkered shirt for men.",
     "price": 399,
     "discount": 7,
     "rating": 4.8,
     "stock": 40,
     "brand": "Apple",
     "category": "Cloth",
-    "images": "https://www.daraz.com.bd/catalog/?q=shirt"
-
+    "images": "https://img.drz.lazcdn.com/static/bd/p/f9da4cfabcf79f513c7b0e2596352300.png_400x400q75.avif"
   },
   {
     "id": 15,
-    "name": "Sony PlayStation 5",
-    "description": "Next-gen gaming console with 4K gaming and fast SSD.",
+    "name": "Fresh Organic Grocery Pack",
+    "description": "Premium quality daily essential grocery pack for home.",
     "price": 499,
     "discount": 5,
     "rating": 4.9,
@@ -181,12 +178,11 @@
     "brand": "Sony",
     "category": "Groceries",
     "images": "https://img.drz.lazcdn.com/static/bd/p/f9da4cfabcf79f513c7b0e2596352300.png_400x400q75.avif"
-    
   },
   {
     "id": 16,
-    "name": "Microsoft Xbox Series X",
-    "description": "Powerful gaming console with 4K and 120fps support.",
+    "name": "Healthy Green Grocery Pack",
+    "description": "Fresh and organic vegetables with rich nutrition.",
     "price": 499,
     "discount": 5,
     "rating": 4.8,
@@ -194,12 +190,11 @@
     "brand": "Microsoft",
     "category": "Groceries",
     "images": "https://img.drz.lazcdn.com/static/bd/p/e17764860405ee9870e5330130696c88.jpg_400x400q75.avif"
-
   },
   {
     "id": 17,
-    "name": "Kindle Paperwhite",
-    "description": "Waterproof e-reader with high-resolution display and long battery life.",
+    "name": "Daily Fresh Grocery Items",
+    "description": "Affordable and fresh grocery products for your kitchen.",
     "price": 129,
     "discount": 15,
     "rating": 4.7,
@@ -207,12 +202,11 @@
     "brand": "Amazon",
     "category": "Groceries",
     "images": "https://img.drz.lazcdn.com/static/bd/p/1a1e3f07750dfad73e3cb7cafcd6b921.png_400x400q75.avif"
-  
   },
   {
     "id": 18,
-    "name": "Garmin Forerunner 955",
-    "description": "Advanced GPS running watch with heart rate monitoring.",
+    "name": "Premium Grocery Basket",
+    "description": "A complete grocery basket with essential kitchen products.",
     "price": 499,
     "discount": 10,
     "rating": 4.6,
@@ -220,25 +214,23 @@
     "brand": "Garmin",
     "category": "Groceries",
     "images": "https://img.drz.lazcdn.com/collect/sg/p/e07b0c3b9286028e723b63e0f90fc70e.jpg_400x400q75.avif"
-
   },
   {
     "id": 19,
-    "name": "Razer BlackWidow V3",
-    "description": "Mechanical gaming keyboard with customizable RGB lighting.",
+    "name": "Family Grocery Essentials Pack",
+    "description": "A big family grocery essentials combo pack.",
     "price": 139,
     "discount": 12,
     "rating": 4.5,
     "stock": 45,
     "brand": "Razer",
     "category": "Groceries",
-    "images":"https://img.drz.lazcdn.com/collect/sg/p/d19864650330e7fb381617ab75335cad.jpg_400x400q75.avif"
-  
+    "images": "https://img.drz.lazcdn.com/collect/sg/p/d19864650330e7fb381617ab75335cad.jpg_400x400q75.avif"
   },
   {
     "id": 20,
-    "name": "Logitech G502 HERO Mouse",
-    "description": "High-performance gaming mouse with 16,000 DPI sensor.",
+    "name": "Household Grocery Pack",
+    "description": "Daily home essential groceries in one affordable pack.",
     "price": 79,
     "discount": 10,
     "rating": 4.7,
@@ -246,6 +238,5 @@
     "brand": "Logitech",
     "category": "Groceries",
     "images": "https://img.drz.lazcdn.com/static/bd/p/c651b2582387178405e63d6f57d84004.jpg_400x400q75.avif"
-
   }
 ]
