@@ -30,7 +30,7 @@ const MainProducts = () => {
         {products.map((product) => (
           <div
             key={product.id}
-            className="group border rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300"
+            className="group border rounded overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300"
           >
             {/* Product Image */}
             <div className="relative">
