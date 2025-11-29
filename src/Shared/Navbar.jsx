@@ -37,7 +37,7 @@ const Navbar = () => {
             <span className="">Cart</span>
           </Link>
 
-          <Link to={'/seller'} className="flex items-center gap-1.5">
+          <Link to={'/becomeSeller'} className="flex items-center gap-1.5">
             <FaStore className="text-3xl hover:bg-gray-100 rounded-full p-1 hover:text-purple-600 " />
             <span className="">Become a Seller</span>
           </Link>
