@@ -24,7 +24,6 @@ const MainProducts = () => {
 
   return (
     <div className="w-full md:w-[80%]">
-      <h2 className="text-xl font-semibold mb-5">All Products</h2>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product) => (
@@ -37,7 +36,7 @@ const MainProducts = () => {
               <img
                 src={product.images}
                 alt={product.name}
-                className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110 p-5"
               />
 
               {/* Discount Badge */}
