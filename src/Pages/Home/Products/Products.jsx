@@ -6,7 +6,7 @@ const Products = () => {
   const [category, setCategory] = useState("All Categories");
 
   return (
-    <div className="container mx-auto px-5 py-8 flex flex-col md:flex-row gap-8">
+    <div className="container mx-auto px-5 py-10 flex flex-col md:flex-row gap-8">
       <SideBar category={category} setCategory={setCategory} />
       <MainProducts category={category} />
     </div>
