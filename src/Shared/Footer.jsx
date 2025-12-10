@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Logo & About */}
         <div>
-          <h1 className="text-3xl font-bold text-purple-600 mb-4">BuySmart</h1>
+          <h1 className="text-3xl font-bold text-purple-600 mb-4">ShopZen</h1>
           <p className="text-gray-400 text-sm leading-relaxed">
             BuySmart is your one-stop destination for electronics, gadgets, and accessories. We provide the best quality products with excellent customer service.
           </p>
@@ -31,7 +31,6 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold text-gray-100 mb-4 text-lg">Quick Links</h3>
           <ul className="space-y-3 text-gray-400 text-sm">
-            <li><a href="#" className="hover:text-purple-600 transition-colors duration-300">Home</a></li>
             <li><a href="#" className="hover:text-purple-600 transition-colors duration-300">Shop</a></li>
             <li><a href="#" className="hover:text-purple-600 transition-colors duration-300">About Us</a></li>
             <li><a href="#" className="hover:text-purple-600 transition-colors duration-300">Contact</a></li>
