@@ -18,21 +18,17 @@ const categories = [
 ];
 
 const topBrands = ["Samsung", "Apple", "Sony", "Xiaomi", "Gucci", "Rolex"];
-
 const ratings = ["5 Star", "4 Star & Above", "3 Star & Above"];
-
 const offers = ["Flash Sale", "Free Delivery", "Buy 1 Get 1"];
 
 const SideBar = ({ category, setCategory }) => {
   return (
     <div className="w-full md:w-[20%] border rounded-xl border-gray-200 shadow-md p-5 bg-white">
 
-      {/* Category Title */}
       <h1 className="text-xl font-semibold mb-4 border-b pb-2 text-gray-900">
         Categories
       </h1>
 
-      {/* Category List */}
       <div className="flex flex-col gap-2 mb-6">
         {categories.map((item, index) => (
           <div
@@ -44,8 +40,7 @@ const SideBar = ({ category, setCategory }) => {
                 category === item.name
                   ? "bg-green-100 text-green-700"
                   : "hover:bg-green-50 text-gray-800"
-              }
-            `}
+              }`}
           >
             <span className="text-xl text-green-600">{item.icon}</span>
             <p className="text-sm font-medium">{item.name}</p>
@@ -53,7 +48,6 @@ const SideBar = ({ category, setCategory }) => {
         ))}
       </div>
 
-      {/* Top Brands */}
       <h2 className="text-lg font-semibold mb-3 border-b pb-2 text-gray-900">
         Top Brands
       </h2>
@@ -65,7 +59,6 @@ const SideBar = ({ category, setCategory }) => {
         ))}
       </div>
 
-      {/* Ratings */}
       <h2 className="text-lg font-semibold mb-3 border-b pb-2 text-gray-900">
         Ratings
       </h2>
@@ -77,7 +70,6 @@ const SideBar = ({ category, setCategory }) => {
         ))}
       </div>
 
-      {/* Offers */}
       <h2 className="text-lg font-semibold mb-3 border-b pb-2 text-gray-900">
         Offers
       </h2>
@@ -89,7 +81,6 @@ const SideBar = ({ category, setCategory }) => {
         ))}
       </div>
 
-      {/* Support */}
       <h2 className="text-lg font-semibold mb-3 border-b pb-2 text-gray-900">
         Support
       </h2>
