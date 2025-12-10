@@ -54,7 +54,9 @@ const MainProducts = ({ category }) => {
 
             <div className="p-3">
               <h3 className="text-sm font-semibold text-gray-900 group-hover:text-green-600 transition">
-                {product.name}
+{product.name.length > 20
+  ? product.name.slice(0, 20) + "..."
+  : product.name}
               </h3>
 
               <p className="text-[13px] text-gray-500 mt-1 line-clamp-2">
