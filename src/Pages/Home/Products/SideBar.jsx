@@ -2,19 +2,15 @@ import React from "react";
 import {
   PiGridFourFill,
   PiDeviceMobileCameraFill,
-  PiHeadphonesFill,
   PiDressFill,
   PiBowlFoodFill,
-  PiWatchFill,
 } from "react-icons/pi";
 
 const categories = [
   { icon: <PiGridFourFill />, name: "All Categories" },
-  { icon: <PiDeviceMobileCameraFill />, name: "Electronic Devices" },
-  { icon: <PiHeadphonesFill />, name: "Accessories" },
-  { icon: <PiDressFill />, name: "Fashion & Clothing" },
-  { icon: <PiBowlFoodFill />, name: "Groceries & Foods" },
-  { icon: <PiWatchFill />, name: "Watches" },
+  { icon: <PiDeviceMobileCameraFill />, name: "Electronics" },
+  { icon: <PiDressFill />, name: "Cloth" },
+  { icon: <PiBowlFoodFill />, name: "Groceries" },
 ];
 
 const topBrands = ["Samsung", "Apple", "Sony", "Xiaomi", "Gucci", "Rolex"];
