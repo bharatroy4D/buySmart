@@ -44,7 +44,7 @@ const SideBar = ({ category, setCategory }) => {
         ))}
       </div>
 
-      {/* <h2 className="text-lg font-semibold mb-3 border-b pb-2 text-gray-900">
+      <h2 className="text-lg font-semibold mb-3 border-b pb-2 text-gray-900">
         Top Brands
       </h2>
       <div className="flex flex-col gap-2 mb-6">
@@ -53,7 +53,7 @@ const SideBar = ({ category, setCategory }) => {
             • {brand}
           </p>
         ))}
-      </div> */}
+      </div>
 
       <h2 className="text-lg font-semibold mb-3 border-b pb-2 text-gray-900">
         Ratings

@@ -35,7 +35,7 @@ const MainProducts = ({ category }) => {
     <div className="w-full md:w-[80%]">
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {filteredProducts.map((product) => (
+        {filteredProducts.slice(0, 12).map((product) => (
           <div
             key={product.id}
             className="group p-4 rounded overflow-hidden bg-base-200 shadow-md hover:shadow-xl transition-all duration-300"
