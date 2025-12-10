@@ -17,9 +17,7 @@ const MainProducts = ({ category }) => {
   const filteredProducts =
     category === "All Categories"
       ? products
-      : products.filter(
-          (product) => product.category === category
-        );
+      : products.filter((product) => product.category === category);
 
   if (loading) {
     return (
@@ -32,43 +30,48 @@ const MainProducts = ({ category }) => {
   }
 
   return (
-    <div className="w-full md:w-[80%]">
-
+    <div className="w-full md:w-[80%] mx-auto">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {filteredProducts.slice(0, 12).map((product) => (
           <div
             key={product.id}
-            className="group p-4 rounded overflow-hidden bg-base-200 shadow-md hover:shadow-xl transition-all duration-300"
+            className="group rounded-xl bg-white border border-gray-100 
+                       shadow-sm hover:shadow-lg transition-all duration-300"
           >
-            <div className="relative">
+            {/* Image Section */}
+            <div className="relative overflow-hidden bg-gray-50 rounded-t-xl">
               <img
                 src={product.images}
                 alt={product.name}
-                className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110 p-5"
+                className="w-full h-40 object-contain p-4 
+                           transition-transform duration-300 
+                           group-hover:scale-105"
               />
 
-              <span className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded-lg shadow-md">
+              <span className="absolute top-2 right-2 bg-green-600 
+                               text-white text-[11px] px-2 py-1 rounded">
                 -{product.discount}% OFF
               </span>
             </div>
 
-            <div className="p-3">
-              <h3 className="text-sm font-semibold text-gray-900 group-hover:text-green-600 transition">
-{product.name.length > 20
-  ? product.name.slice(0, 20) + "..."
-  : product.name}
+            {/* Content */}
+            <div className="p-4 flex flex-col h-[150px]">
+              <h3 className="text-sm font-medium text-gray-800 leading-tight">
+                {product.name.length > 20
+                  ? product.name.slice(0, 20) + "..."
+                  : product.name}
               </h3>
 
-              <p className="text-[13px] text-gray-500 mt-1 line-clamp-2">
+              <p className="text-xs text-gray-500 mt-1 line-clamp-2">
                 {product.description}
               </p>
 
-              <div className="mt-3 flex items-center justify-between">
-                <p className="text-green-700 font-bold text-sm">
+              <div className="mt-auto pt-3 flex items-center justify-between">
+                <p className="text-green-700 font-semibold text-sm">
                   ${product.price}
                 </p>
 
-                <p className="text-yellow-500 text-sm font-medium">
+                <p className="text-yellow-500 text-xs font-medium">
                   ⭐ {product.rating}
                 </p>
               </div>
