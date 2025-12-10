@@ -12,7 +12,7 @@ const Footer = () => {
             BuySmart is your one-stop destination for electronics, gadgets, and accessories. We provide the best quality products with excellent customer service.
           </p>
           <div className="flex mt-5 gap-3">
-            <a href="#" className="p-3 rounded-full bg-gray-800 hover:bg-purple-600 transition-colors duration-300">
+            <a href="https://www.facebook.com/bharatroyfb" className="p-3 rounded-full bg-gray-800 hover:bg-purple-600 transition-colors duration-300">
               <FaFacebookF />
             </a>
             <a href="#" className="p-3 rounded-full bg-gray-800 hover:bg-purple-600 transition-colors duration-300">
@@ -21,7 +21,7 @@ const Footer = () => {
             <a href="#" className="p-3 rounded-full bg-gray-800 hover:bg-purple-600 transition-colors duration-300">
               <FaInstagram />
             </a>
-            <a href="#" className="p-3 rounded-full bg-gray-800 hover:bg-purple-600 transition-colors duration-300">
+            <a href="https://www.linkedin.com/in/bharatroy/" className="p-3 rounded-full bg-gray-800 hover:bg-purple-600 transition-colors duration-300">
               <FaLinkedinIn />
             </a>
           </div>
