@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const MainProducts = () => {
+const MainProducts = ({ category }) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -14,10 +14,19 @@ const MainProducts = () => {
       .catch(() => setLoading(false));
   }, []);
 
+  const filteredProducts =
+    category === "All Categories"
+      ? products
+      : products.filter(
+          (product) => product.category === category
+        );
+
   if (loading) {
     return (
       <div className="w-full flex justify-center py-20">
-        <p className="text-lg font-medium text-green-600">Loading products...</p>
+        <p className="text-lg font-medium text-green-600">
+          Loading products...
+        </p>
       </div>
     );
   }
@@ -26,12 +35,11 @@ const MainProducts = () => {
     <div className="w-full md:w-[80%]">
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {products.map((product) => (
+        {filteredProducts.map((product) => (
           <div
             key={product.id}
-            className="group  p-4 rounded overflow-hidden bg-base-200 shadow-md hover:shadow-xl transition-all duration-300"
+            className="group p-4 rounded overflow-hidden bg-base-200 shadow-md hover:shadow-xl transition-all duration-300"
           >
-            {/* Product Image */}
             <div className="relative">
               <img
                 src={product.images}
@@ -39,13 +47,11 @@ const MainProducts = () => {
                 className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110 p-5"
               />
 
-              {/* Discount Badge */}
               <span className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded-lg shadow-md">
                 -{product.discount}% OFF
               </span>
             </div>
 
-            {/* Content */}
             <div className="p-3">
               <h3 className="text-sm font-semibold text-gray-900 group-hover:text-green-600 transition">
                 {product.name}
@@ -55,7 +61,6 @@ const MainProducts = () => {
                 {product.description}
               </p>
 
-              {/* Price & Rating */}
               <div className="mt-3 flex items-center justify-between">
                 <p className="text-green-700 font-bold text-sm">
                   ${product.price}
@@ -64,11 +69,17 @@ const MainProducts = () => {
                 <p className="text-yellow-500 text-sm font-medium">
                   ⭐ {product.rating}
                 </p>
-              </div>            
+              </div>
             </div>
           </div>
         ))}
       </div>
+
+      {filteredProducts.length === 0 && (
+        <p className="text-center text-gray-500 mt-10">
+          No products found
+        </p>
+      )}
     </div>
   );
 };
