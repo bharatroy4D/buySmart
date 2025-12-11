@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { FiFilter, FiArrowDown, FiArrowUp } from "react-icons/fi";
 
 const MainProducts = ({ category }) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [sortOrder, setSortOrder] = useState("asc"); // asc or desc
 
   useEffect(() => {
     fetch("/products.json")
@@ -14,10 +16,16 @@ const MainProducts = ({ category }) => {
       .catch(() => setLoading(false));
   }, []);
 
+  // Filter by category
   const filteredProducts =
     category === "All Categories"
       ? products
       : products.filter((product) => product.category === category);
+
+  // Sort by price
+  const sortedProducts = [...filteredProducts].sort((a, b) =>
+    sortOrder === "asc" ? a.price - b.price : b.price - a.price
+  );
 
   if (loading) {
     return (
@@ -31,14 +39,39 @@ const MainProducts = ({ category }) => {
 
   return (
     <div className="w-full md:w-[80%] mx-auto">
+      {/* --------------------- MOBILE SORT & FILTER --------------------- */}
+      <div className="flex items-center justify-between gap-4 mb-4 lg:hidden">
+        {/* Sort Button */}
+        <button
+          onClick={() =>
+            setSortOrder(sortOrder === "asc" ? "desc" : "asc")
+          }
+          className="flex items-center gap-1 px-3 py-1 border rounded-lg hover:bg-gray-100 transition"
+        >
+          <span className="text-sm font-medium">Sort by Price</span>
+          {sortOrder === "asc" ? (
+            <FiArrowUp className="text-lg" />
+          ) : (
+            <FiArrowDown className="text-lg" />
+          )}
+        </button>
+
+        {/* Filter Button */}
+        <button className="flex items-center gap-1 px-3 py-1 border rounded-lg hover:bg-gray-100 transition">
+          <FiFilter className="text-lg" />
+          <span className="text-sm font-medium">Filter</span>
+        </button>
+      </div>
+
+      {/* --------------------- PRODUCT GRID --------------------- */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {filteredProducts.slice(0, 12).map((product) => (
+        {sortedProducts.slice(0, 12).map((product) => (
           <div
             key={product.id}
             className="group rounded-xl bg-white border border-gray-100 
                        shadow-sm hover:shadow-lg transition-all duration-300"
           >
-            {/* Image Section */}
+            {/* Image */}
             <div className="relative overflow-hidden bg-gray-50 rounded-t-xl">
               <img
                 src={product.images}
@@ -80,7 +113,7 @@ const MainProducts = ({ category }) => {
         ))}
       </div>
 
-      {filteredProducts.length === 0 && (
+      {sortedProducts.length === 0 && (
         <p className="text-center text-gray-500 mt-10">
           No products found
         </p>

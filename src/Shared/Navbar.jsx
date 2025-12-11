@@ -15,8 +15,8 @@ const Navbar = () => {
       <nav className="bg-red-400 shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-5 py-3 flex items-center justify-between">
 
-          {/* Logo */}
-          <Link to="/" className="text-3xl font-bold text-white tracking-wide">
+          {/* Logo (Desktop) */}
+          <Link to="/" className="hidden lg:block text-3xl font-bold text-white tracking-wide">
             Shopzen
           </Link>
 
@@ -60,8 +60,19 @@ const Navbar = () => {
             </Link>
           </div>
 
+          {/* Mobile Search (Top) */}
+          <div className="lg:hidden flex-1 relative">
+            <input
+              type="text"
+              placeholder="Search products..."
+              className="w-full px-4 py-3 bg-gray-100 rounded-lg
+                         focus:outline-none focus:ring-2 focus:ring-red-400"
+            />
+            <CiSearch className="absolute right-4 top-3 text-2xl text-gray-500" />
+          </div>
+
           {/* Mobile Menu Button */}
-          <div className="lg:hidden">
+          <div className="lg:hidden ml-3">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-3xl text-white"
@@ -71,21 +82,9 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu Dropdown */}
+        {/* Mobile Dropdown Menu */}
         {isOpen && (
           <div className="lg:hidden bg-gray-50 px-5 pb-4 space-y-4 shadow-lg">
-            {/* Mobile Search */}
-            <div className="relative">
-              <input
-                type="text"
-                placeholder="Search products..."
-                className="w-full px-4 py-3 bg-gray-100 rounded-lg
-                           focus:outline-none focus:ring-2 focus:ring-red-400"
-              />
-              <CiSearch className="absolute right-4 top-3 text-2xl text-gray-500" />
-            </div>
-
-            {/* Mobile Links */}
             <Link
               to="/shopCart"
               className="flex items-center gap-2 text-gray-700 font-medium hover:text-red-500 transition"
