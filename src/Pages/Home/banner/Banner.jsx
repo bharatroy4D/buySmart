@@ -59,7 +59,7 @@ const Banner = () => {
     "rounded-2xl p-5 md:px-0 md:rounded-none";
 
   return (
-    <div className="w-full relative">
+    <div className="w-full relative container px-5 mx-auto">
       <Slider {...settings}>
         <div>
           <img src={banner_1} alt="Banner 1" className={imageClasses} />
