@@ -19,7 +19,7 @@ const offers = ["Flash Sale", "Free Delivery", "Buy 1 Get 1"];
 
 const SideBar = ({ category, setCategory }) => {
   return (
-    <div className="w-full md:w-[20%] border rounded-xl border-gray-200 shadow-md p-5 bg-white">
+    <div className="w-full md:w-[20%] hidden md:block border rounded-xl border-gray-200 shadow-md p-5 bg-white">
 
       <h1 className="text-xl font-semibold mb-4 border-b pb-2 text-gray-900">
         Categories
