@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
-import { FaRegUserCircle } from "react-icons/fa";
+import { FaHome, FaRegUserCircle } from "react-icons/fa";
 import { FaStore } from "react-icons/fa6";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -12,16 +12,11 @@ const Navbar = () => {
     <>
       {/* 🔴 TOP NAVBAR WITH SEARCH BAR */}
       <nav className="bg-red-400 shadow-md sticky top-0 z-50">
-        <div className="container mx-auto px-5 py-4">
+        <div className="container mx-auto px-5 p-4">
 
           {/* Logo */}
           <div className="flex items-center justify-between">
-            <Link
-              to="/"
-              className="text-3xl font-bold text-white tracking-wide"
-            >
-              Shopzen
-            </Link>
+
 
             {/* Desktop Icons (Right Side) */}
             <div className="hidden md:flex items-center gap-6 text-white">
@@ -52,7 +47,7 @@ const Navbar = () => {
           </div>
 
           {/* Search Bar */}
-          <div className="mt-4 relative max-w-3xl mx-auto">
+          <div className=" relative max-w-3xl mx-auto">
             <input
               type="text"
               placeholder="What are you looking for..."
@@ -73,8 +68,8 @@ const Navbar = () => {
         <div className="flex justify-around items-center">
 
           <Link to="/" className="flex flex-col items-center text-gray-700">
-            <CiSearch className="text-2xl" />
-            <span className="text-xs mt-1">Search</span>
+            <FaHome className="text-2xl"/>
+            <span className="text-xs mt-1">Home</span>
           </Link>
 
           <Link to="/shopCart" className="flex flex-col items-center text-gray-700">
