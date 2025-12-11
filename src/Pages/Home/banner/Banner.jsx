@@ -8,7 +8,7 @@ import banner_1 from "../../../assets/banner_img/Smartphone Banner.png";
 import banner_2 from "../../../assets/banner_img/smartwatch electronics.png";
 import banner_3 from "../../../assets/banner_img/Appliances Banner.png";
 
-// Custom Arrow
+// Custom Arrows
 const NextArrow = ({ onClick }) => (
   <div
     className="absolute top-1/2 right-2 md:right-5 z-20 cursor-pointer 
@@ -47,37 +47,30 @@ const Banner = () => {
       {
         breakpoint: 768, // Mobile
         settings: {
-          arrows: false, // hide arrows on mobile
+          arrows: false,
         },
       },
     ],
   };
 
+  // Shared image style (mobile rounded, desktop full)
+  const imageClasses =
+    "w-full h-[35vh] sm:h-[45vh] md:h-[60vh] lg:h-[70vh] object-cover " +
+    "rounded-2xl p-5 md:px-0 md:rounded-none";
+
   return (
     <div className="w-full relative">
       <Slider {...settings}>
         <div>
-          <img
-            src={banner_1}
-            alt="Smartphone Banner"
-            className="w-full h-[35vh] sm:h-[45vh] md:h-[60vh] lg:h-[70vh] object-cover"
-          />
+          <img src={banner_1} alt="Banner 1" className={imageClasses} />
         </div>
 
         <div>
-          <img
-            src={banner_2}
-            alt="Smartwatch Banner"
-            className="w-full h-[35vh] sm:h-[45vh] md:h-[60vh] lg:h-[70vh] object-cover"
-          />
+          <img src={banner_2} alt="Banner 2" className={imageClasses} />
         </div>
 
         <div>
-          <img
-            src={banner_3}
-            alt="Appliances Banner"
-            className="w-full h-[35vh] sm:h-[45vh] md:h-[60vh] lg:h-[70vh] object-cover"
-          />
+          <img src={banner_3} alt="Banner 3" className={imageClasses} />
         </div>
       </Slider>
     </div>
