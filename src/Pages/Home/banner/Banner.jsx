@@ -8,28 +8,35 @@ import banner_1 from "../../../assets/banner_img/Smartphone Banner.png";
 import banner_2 from "../../../assets/banner_img/smartwatch electronics.png";
 import banner_3 from "../../../assets/banner_img/Appliances Banner.png";
 
-// Custom Arrows
-const NextArrow = ({ onClick }) => (
-  <div
-    className="absolute top-1/2 right-2 md:right-5 z-20 cursor-pointer 
-               text-white text-lg md:text-2xl transform -translate-y-1/2 
-               bg-black/40 p-2 rounded-full hover:bg-black/60 transition"
-    onClick={onClick}
-  >
-    <FaArrowRight />
-  </div>
-);
+// Custom Next Arrow
+const NextArrow = ({ onClick }) => {
+  return (
+    <div
+      onClick={onClick}
+      className="absolute top-1/2 right-3 md:right-6 z-20 
+                 -translate-y-1/2 cursor-pointer
+                 bg-black/40 hover:bg-black/60 transition
+                 text-white p-2 md:p-3 rounded-full"
+    >
+      <FaArrowRight className="text-sm md:text-lg" />
+    </div>
+  );
+};
 
-const PrevArrow = ({ onClick }) => (
-  <div
-    className="absolute top-1/2 left-2 md:left-5 z-20 cursor-pointer 
-               text-white text-lg md:text-2xl transform -translate-y-1/2 
-               bg-black/40 p-2 rounded-full hover:bg-black/60 transition"
-    onClick={onClick}
-  >
-    <FaArrowLeft />
-  </div>
-);
+// Custom Prev Arrow
+const PrevArrow = ({ onClick }) => {
+  return (
+    <div
+      onClick={onClick}
+      className="absolute top-1/2 left-3 md:left-6 z-20 
+                 -translate-y-1/2 cursor-pointer
+                 bg-black/40 hover:bg-black/60 transition
+                 text-white p-2 md:p-3 rounded-full"
+    >
+      <FaArrowLeft className="text-sm md:text-lg" />
+    </div>
+  );
+};
 
 const Banner = () => {
   const settings = {
@@ -41,11 +48,12 @@ const Banner = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
+    arrows: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 768, // Mobile
+        breakpoint: 768, // mobile & tablet
         settings: {
           arrows: false,
         },
@@ -53,25 +61,24 @@ const Banner = () => {
     ],
   };
 
-  // Shared image style (mobile rounded, desktop full)
-  const imageClasses =
-    "w-full h-[35vh] sm:h-[45vh] md:h-[60vh] lg:h-[70vh] object-cover " +
-    "rounded-2xl p-5 md:px-0 md:rounded-none";
-
   return (
-    <div className="w-full relative container px-5 mx-auto">
+    <div className="w-full relative container mx-auto px-5 ">
       <Slider {...settings}>
-        <div>
-          <img src={banner_1} alt="Banner 1" className={imageClasses} />
-        </div>
-
-        <div>
-          <img src={banner_2} alt="Banner 2" className={imageClasses} />
-        </div>
-
-        <div>
-          <img src={banner_3} alt="Banner 3" className={imageClasses} />
-        </div>
+        {[banner_1, banner_2, banner_3].map((img, index) => (
+          <div key={index} className="p-5 md:p-0">
+            <img
+              src={img}
+              alt={`Banner ${index + 1}`}
+              className="
+                w-full
+                h-[24vh] sm:h-[45vh] md:h-[30vh] lg:h-[60vh]
+                object-cover
+                rounded-xl md:rounded-none
+                shadow-lg md:shadow-none
+              "
+            />
+          </div>
+        ))}
       </Slider>
     </div>
   );
