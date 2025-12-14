@@ -72,14 +72,14 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden ml-3">
+          {/* <div className="lg:hidden ml-3">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-3xl text-white"
             >
               {isOpen ? <FiX /> : <FiMenu />}
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* Mobile Dropdown Menu */}
