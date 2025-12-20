@@ -28,7 +28,7 @@ const MainProducts = ({ category }) => {
 
   if (loading) {
     return (
-      <div className="w-full flex justify-center py-20">
+      <div className="w-full flex justify-center py-24">
         <p className="text-lg font-medium text-green-600">
           Loading products...
         </p>
@@ -38,56 +38,77 @@ const MainProducts = ({ category }) => {
 
   return (
     <div className="w-full md:w-[80%] mx-auto">
-      {/* Mobile Sort */}
-      <div className="flex justify-between mb-4 lg:hidden">
+      {/* ---------------- Mobile Sort & Filter ---------------- */}
+      <div className="flex items-center justify-between gap-4 mb-5 lg:hidden">
         <button
           onClick={() =>
             setSortOrder(sortOrder === "asc" ? "desc" : "asc")
           }
-          className="flex items-center gap-1 px-3 py-1 border rounded-lg"
+          className="flex items-center gap-2 px-4 py-2 border rounded-lg
+                     text-sm font-medium hover:bg-gray-100 transition"
         >
           Sort by Price
-          {sortOrder === "asc" ? <FiArrowUp /> : <FiArrowDown />}
+          {sortOrder === "asc" ? (
+            <FiArrowUp className="text-base" />
+          ) : (
+            <FiArrowDown className="text-base" />
+          )}
         </button>
 
-        <button className="flex items-center gap-1 px-3 py-1 border rounded-lg">
-          <FiFilter /> Filter
+        <button
+          className="flex items-center gap-2 px-4 py-2 border rounded-lg
+                     text-sm font-medium hover:bg-gray-100 transition"
+        >
+          <FiFilter className="text-base" />
+          Filter
         </button>
       </div>
 
-      {/* Product Grid */}
+      {/* ---------------- Product Grid ---------------- */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {sortedProducts.slice(0, 12).map((product) => (
           <Link
             key={product.id}
             to={`/productView/${product.id}`}
-            className="group rounded-xl bg-white border shadow-sm hover:shadow-lg transition"
+            className="group bg-white border border-gray-100 rounded-xl
+                       overflow-hidden shadow-sm hover:shadow-lg
+                       transition-all duration-300"
           >
-            <div className="bg-gray-50 rounded-t-xl p-4">
+            {/* Image */}
+            <div className="relative bg-gray-50 h-44 flex items-center justify-center">
               <img
                 src={product.images}
                 alt={product.name}
-                className="w-full h-40 object-contain group-hover:scale-105 transition"
+                className="h-32 object-contain transition-transform duration-300
+                           group-hover:scale-105"
               />
-              <span className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                -{product.discount}%
+
+              <span
+                className="absolute top-2 right-2 bg-green-600 text-white
+                           text-[11px] font-medium px-2 py-1 rounded"
+              >
+                -{product.discount}% OFF
               </span>
             </div>
 
-            <div className="p-4 h-[150px] flex flex-col">
-              <h3 className="text-sm font-medium">
-                {product.name.slice(0, 20)}...
+            {/* Content */}
+            <div className="p-4 flex flex-col h-[155px]">
+              <h3 className="text-sm font-semibold text-gray-800 leading-tight">
+                {product.name.length > 22
+                  ? product.name.slice(0, 22) + "..."
+                  : product.name}
               </h3>
 
               <p className="text-xs text-gray-500 mt-1 line-clamp-2">
                 {product.description}
               </p>
 
-              <div className="mt-auto flex justify-between">
-                <p className="text-green-700 font-semibold">
+              <div className="mt-auto pt-3 flex items-center justify-between">
+                <p className="text-green-700 font-semibold text-sm">
                   ${product.price}
                 </p>
-                <p className="text-yellow-500 text-xs">
+
+                <p className="text-yellow-500 text-xs font-medium">
                   ⭐ {product.rating}
                 </p>
               </div>
@@ -97,7 +118,7 @@ const MainProducts = ({ category }) => {
       </div>
 
       {sortedProducts.length === 0 && (
-        <p className="text-center mt-10 text-gray-500">
+        <p className="text-center text-gray-500 mt-12">
           No products found
         </p>
       )}
