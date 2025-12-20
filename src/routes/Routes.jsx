@@ -8,6 +8,7 @@ import Login from "../Components/Login/Login";
 import Home from "../Pages/Home";
 import Products from "../Pages/Home/Products/Products";
 import BecomeSeller from "../Components/BecomeSeller/BecomeSeller";
+import ProductView from "../Pages/Home/Products/ProductView";
 
 export const routes = createBrowserRouter([
     {
@@ -37,6 +38,10 @@ export const routes = createBrowserRouter([
             {
                 path: "/becomeSeller",
                 element: <BecomeSeller />,
+            },
+            {
+                path: "/productView/:id",
+                element: <ProductView />,
             },
 
         ]

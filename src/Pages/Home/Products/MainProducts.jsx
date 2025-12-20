@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { FiFilter, FiArrowDown, FiArrowUp } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const MainProducts = ({ category }) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [sortOrder, setSortOrder] = useState("asc"); // asc or desc
+  const [sortOrder, setSortOrder] = useState("asc");
 
   useEffect(() => {
     fetch("/products.json")
@@ -16,13 +17,11 @@ const MainProducts = ({ category }) => {
       .catch(() => setLoading(false));
   }, []);
 
-  // Filter by category
   const filteredProducts =
     category === "All Categories"
       ? products
-      : products.filter((product) => product.category === category);
+      : products.filter((p) => p.category === category);
 
-  // Sort by price
   const sortedProducts = [...filteredProducts].sort((a, b) =>
     sortOrder === "asc" ? a.price - b.price : b.price - a.price
   );
@@ -39,82 +38,66 @@ const MainProducts = ({ category }) => {
 
   return (
     <div className="w-full md:w-[80%] mx-auto">
-      {/* --------------------- MOBILE SORT & FILTER --------------------- */}
-      <div className="flex items-center justify-between gap-4 mb-4 lg:hidden">
-        {/* Sort Button */}
+      {/* Mobile Sort */}
+      <div className="flex justify-between mb-4 lg:hidden">
         <button
           onClick={() =>
             setSortOrder(sortOrder === "asc" ? "desc" : "asc")
           }
-          className="flex items-center gap-1 px-3 py-1 border rounded-lg hover:bg-gray-100 transition"
+          className="flex items-center gap-1 px-3 py-1 border rounded-lg"
         >
-          <span className="text-sm font-medium">Sort by Price</span>
-          {sortOrder === "asc" ? (
-            <FiArrowUp className="text-lg" />
-          ) : (
-            <FiArrowDown className="text-lg" />
-          )}
+          Sort by Price
+          {sortOrder === "asc" ? <FiArrowUp /> : <FiArrowDown />}
         </button>
 
-        {/* Filter Button */}
-        <button className="flex items-center gap-1 px-3 py-1 border rounded-lg hover:bg-gray-100 transition">
-          <FiFilter className="text-lg" />
-          <span className="text-sm font-medium">Filter</span>
+        <button className="flex items-center gap-1 px-3 py-1 border rounded-lg">
+          <FiFilter /> Filter
         </button>
       </div>
 
-      {/* --------------------- PRODUCT GRID --------------------- */}
+      {/* Product Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {sortedProducts.slice(0, 12).map((product) => (
-          <div
+          <Link
             key={product.id}
-            className="group rounded-xl bg-white border border-gray-100 
-                       shadow-sm hover:shadow-lg transition-all duration-300"
+            to={`/productView/${product.id}`}
+            className="group rounded-xl bg-white border shadow-sm hover:shadow-lg transition"
           >
-            {/* Image */}
-            <div className="relative overflow-hidden bg-gray-50 rounded-t-xl">
+            <div className="bg-gray-50 rounded-t-xl p-4">
               <img
                 src={product.images}
                 alt={product.name}
-                className="w-full h-40 object-contain p-4 
-                           transition-transform duration-300 
-                           group-hover:scale-105"
+                className="w-full h-40 object-contain group-hover:scale-105 transition"
               />
-
-              <span className="absolute top-2 right-2 bg-green-600 
-                               text-white text-[11px] px-2 py-1 rounded">
-                -{product.discount}% OFF
+              <span className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                -{product.discount}%
               </span>
             </div>
 
-            {/* Content */}
-            <div className="p-4 flex flex-col h-[150px]">
-              <h3 className="text-sm font-medium text-gray-800 leading-tight">
-                {product.name.length > 20
-                  ? product.name.slice(0, 20) + "..."
-                  : product.name}
+            <div className="p-4 h-[150px] flex flex-col">
+              <h3 className="text-sm font-medium">
+                {product.name.slice(0, 20)}...
               </h3>
 
               <p className="text-xs text-gray-500 mt-1 line-clamp-2">
                 {product.description}
               </p>
 
-              <div className="mt-auto pt-3 flex items-center justify-between">
-                <p className="text-green-700 font-semibold text-sm">
+              <div className="mt-auto flex justify-between">
+                <p className="text-green-700 font-semibold">
                   ${product.price}
                 </p>
-
-                <p className="text-yellow-500 text-xs font-medium">
+                <p className="text-yellow-500 text-xs">
                   ⭐ {product.rating}
                 </p>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
       {sortedProducts.length === 0 && (
-        <p className="text-center text-gray-500 mt-10">
+        <p className="text-center mt-10 text-gray-500">
           No products found
         </p>
       )}
