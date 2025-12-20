@@ -65,7 +65,7 @@ const Banner = () => {
     <div className="w-full relative container mx-auto px-5 ">
       <Slider {...settings}>
         {[banner_1, banner_2, banner_3].map((img, index) => (
-          <div key={index} className="p-5 md:p-0">
+          <div key={index} className=" py-5 md:p-0">
             <img
               src={img}
               alt={`Banner ${index + 1}`}
