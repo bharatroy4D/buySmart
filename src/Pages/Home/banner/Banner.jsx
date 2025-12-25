@@ -62,7 +62,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="w-full relative container mx-auto px-5 ">
+    <div className="w-full relative top-1 lg:top-5 container mx-auto px-5 ">
       <Slider {...settings}>
         {[banner_1, banner_2, banner_3].map((img, index) => (
           <div key={index} className=" py-5 md:p-0">
@@ -72,8 +72,8 @@ const Banner = () => {
               className="
                 w-full
                 h-[24vh] sm:h-[45vh] md:h-[30vh] lg:h-[60vh]
-                object-cover
-                rounded-xl md:rounded-none
+                object-cover 
+                rounded-xl md:rounded-none lg:rounded-lg
                 shadow-lg md:shadow-none
               "
             />
