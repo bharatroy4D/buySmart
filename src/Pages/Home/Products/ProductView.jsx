@@ -6,6 +6,7 @@ const ProductView = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("/products.json")
@@ -15,14 +16,37 @@ const ProductView = () => {
           (item) => item.id === Number(id)
         );
         setProduct(foundProduct);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Product load error:", err);
+        setLoading(false);
       });
   }, [id]);
 
-  if (!product) {
+  // 🔹 Loading State
+  if (loading) {
     return (
       <p className="text-center py-24 text-gray-500">
         Loading product...
       </p>
+    );
+  }
+
+  // 🔹 Product Not Found
+  if (!product) {
+    return (
+      <div className="text-center py-24">
+        <p className="text-gray-500 mb-4">
+          Product not found
+        </p>
+        <button
+          onClick={() => navigate(-1)}
+          className="text-green-600 text-sm hover:underline"
+        >
+          Go Back
+        </button>
+      </div>
     );
   }
 
@@ -72,9 +96,11 @@ const ProductView = () => {
             <p className="text-2xl font-bold text-green-700">
               ${product.price}
             </p>
-            <span className="bg-green-100 text-green-700 text-sm px-3 py-1 rounded-full">
-              {product.discount}% OFF
-            </span>
+            {product.discount && (
+              <span className="bg-green-100 text-green-700 text-sm px-3 py-1 rounded-full">
+                {product.discount}% OFF
+              </span>
+            )}
           </div>
 
           {/* Static Info */}
