@@ -14,58 +14,116 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
+    console.log("Register Data:", formData);
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">
-          Create an Account
-        </h2>
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 p-4">
+      <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl p-8">
 
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-gray-900">
+            Create Account
+          </h2>
+          <p className="text-gray-500 mt-2 text-sm">
+            Please fill in the details to continue
+          </p>
+        </div>
+
+        {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-5">
 
-          {/* Email Field */}
+          {/* Name */}
+          {/* <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Full Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="John Doe"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg
+              focus:outline-none focus:ring-2 focus:ring-blue-500
+              text-gray-900 placeholder-gray-400"
+              required
+            />
+          </div> */}
+
+          {/* Email */}
           <div>
-            <label className="block text-gray-800 font-medium mb-2">Email Address</label>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Email Address
+            </label>
             <input
               type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Your email"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400"
+              placeholder="example@email.com"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg
+              focus:outline-none focus:ring-2 focus:ring-blue-500
+              text-gray-900 placeholder-gray-400"
               required
             />
           </div>
 
-          {/* Password Field */}
+          {/* Password */}
           <div>
-            <label className="block text-gray-800 font-medium mb-2">Password</label>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Password
+            </label>
             <input
               type="password"
               name="password"
               value={formData.password}
               onChange={handleChange}
-              placeholder="Enter password"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400"
+              placeholder="••••••••"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg
+              focus:outline-none focus:ring-2 focus:ring-blue-500
+              text-gray-900 placeholder-gray-400"
               required
             />
           </div>
 
-          {/* Submit Button */}
+          {/* Confirm Password */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Confirm Password
+            </label>
+            <input
+              type="password"
+              name="confirmPassword"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+              placeholder="••••••••"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg
+              focus:outline-none focus:ring-2 focus:ring-blue-500
+              text-gray-900 placeholder-gray-400"
+              required
+            />
+          </div>
+
+          {/* Button */}
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
+            className="w-full bg-green-400 text-white py-3 rounded-lg
+            font-semibold text-lg hover:bg-green-600
+            transition duration-300 shadow-md"
           >
-            Register
+            Create Account
           </button>
         </form>
 
-        <p className="text-center text-gray-600 mt-5">
+        {/* Footer */}
+        <p className="text-center text-sm text-gray-600 mt-6">
           Already have an account?{" "}
-          <a href="/login" className="text-blue-600 hover:underline">
+          <a
+            href="/login"
+            className="text-green-600 font-medium hover:underline"
+          >
             Login
           </a>
         </p>
