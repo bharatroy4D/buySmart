@@ -76,7 +76,7 @@ const BecomeSeller = () => {
                 key={i}
                 className="bg-white p-7 rounded-xl shadow-sm hover:shadow-lg transition"
               >
-                <div className="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-red-600 text-white font-bold mb-4">
+                <div className="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-green-500 text-white font-bold mb-4">
                   {i + 1}
                 </div>
                 <h4 className="text-lg font-semibold">{step}</h4>
