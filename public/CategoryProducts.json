@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "category": "Winter Essentials",
+    "title": "Men's Caps",
+    "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/cap/w/a/k/free-2-in1-cap-zauky-resized-2-original-imah7vuvfprfebaf.jpeg?q=70",
+    "discount": "Special offer",
+    "price": 15.0
+  },
+  {
+    "id": 2,
+    "category": "Winter Essentials",
+    "title": "Men's Jackets",
+    "image": "https://rukminim2.flixcart.com/image/420/420/xif0q/jacket/s/q/q/m-1-no-white-signature-platinumcartz-original-imahgwfvk4zfhgjy.jpeg?q=60",
+    "discount": "Min. 50% Off",
+    "price": 80.0
+  },
+  {
+    "id": 3,
+    "category": "Winter Essentials",
+    "title": "Men's and Women's Socks",
+    "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/sock/i/o/t/free-3-article-02-yotoe-original-imahgzqrdff26yhk.jpeg?q=70",
+    "discount": "Min. 50% Off",
+    "price": 5.0
+  },
+  {
+    "id": 4,
+    "category": "Winter Essentials",
+    "title": "Men's Tracksuits",
+    "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/sock/i/o/t/free-3-article-02-yotoe-original-imahgzqrdff26yhk.jpeg?q=70",
+    "discount": "Special offer",
+    "price": 50.0
+  },
+  {
+    "id": 5,
+    "category": "Fashion's Top Deals",
+    "title": "Men's Sports Shoes",
+    "image": "/images/sports-shoes.jpg",
+    "discount": "Min. 70% Off",
+    "price": 120.0
+  },
+  {
+    "id": 6,
+    "category": "Fashion's Top Deals",
+    "title": "Men's Slippers & Flip Flops",
+    "image": "/images/slippers.jpg",
+    "discount": "Min. 70% Off",
+    "price": 20.0
+  },
+  {
+    "id": 7,
+    "category": "Fashion's Top Deals",
+    "title": "Men's Casual Shoes",
+    "image": "/images/casual-shoes.jpg",
+    "discount": "Min. 70% Off",
+    "price": 90.0
+  },
+  {
+    "id": 8,
+    "category": "Fashion's Top Deals",
+    "title": "Wrist Watches",
+    "image": "/images/wrist-watches.jpg",
+    "discount": "Min. 90% Off",
+    "price": 150.0
+  },
+  {
+    "id": 9,
+    "category": "New Year Essentials",
+    "title": "Laptop Bags",
+    "image": "/images/laptop-bags.jpg",
+    "discount": "Min. 70% Off",
+    "price": 70.0
+  },
+  {
+    "id": 10,
+    "category": "New Year Essentials",
+    "title": "Backpacks",
+    "image": "/images/backpacks.jpg",
+    "discount": "Min. 70% Off",
+    "price": 60.0
+  },
+  {
+    "id": 11,
+    "category": "New Year Essentials",
+    "title": "Suitcases",
+    "image": "/images/suitcases.jpg",
+    "discount": "Min. 70% Off",
+    "price": 120.0
+  },
+  {
+    "id": 12,
+    "category": "New Year Essentials",
+    "title": "Belts",
+    "image": "/images/belts.jpg",
+    "discount": "Min. 50% Off",
+    "price": 25.0
+  }
+]
