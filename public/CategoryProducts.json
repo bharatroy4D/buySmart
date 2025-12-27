@@ -35,7 +35,7 @@
     "id": 5,
     "category": "Fashion's Top Deals",
     "title": "Men's Sports Shoes",
-    "image": "/images/sports-shoes.jpg",
+    "image": "https://img.drz.lazcdn.com/static/bd/p/2c6060c50c1952d4884713f4be91002b.jpg_400x400q75.avif",
     "discount": "Min. 70% Off",
     "price": 120.0
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "category": "Fashion's Top Deals",
     "title": "Men's Slippers & Flip Flops",
-    "image": "/images/slippers.jpg",
+    "image": "https://img.drz.lazcdn.com/static/bd/p/2da1b422207948120728834151d43610.jpg_400x400q80.jpg_.avif",
     "discount": "Min. 70% Off",
     "price": 20.0
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "category": "Fashion's Top Deals",
     "title": "Men's Casual Shoes",
-    "image": "/images/casual-shoes.jpg",
+    "image": "https://img.drz.lazcdn.com/static/bd/p/0e4b0793fa2d4c5f494d7c9697d29598.jpg_400x400q75.avif",
     "discount": "Min. 70% Off",
     "price": 90.0
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "category": "Fashion's Top Deals",
     "title": "Wrist Watches",
-    "image": "/images/wrist-watches.jpg",
+    "image": "https://img.drz.lazcdn.com/static/bd/p/5881f40c5ef284a55c457714b4091a71.jpg_400x400q75.avif",
     "discount": "Min. 90% Off",
     "price": 150.0
   },
@@ -67,7 +67,7 @@
     "id": 9,
     "category": "New Year Essentials",
     "title": "Laptop Bags",
-    "image": "/images/laptop-bags.jpg",
+    "image": "https://img.drz.lazcdn.com/static/bd/p/a6ed5a88cb2052cefde7144ff08847b3.png_400x400q75.avif",
     "discount": "Min. 70% Off",
     "price": 70.0
   },
@@ -75,7 +75,7 @@
     "id": 10,
     "category": "New Year Essentials",
     "title": "Backpacks",
-    "image": "/images/backpacks.jpg",
+    "image": "https://img.drz.lazcdn.com/static/bd/p/56cc7063296cd5b59ebad089784a8bb5.jpg_400x400q80.jpg_.avif",
     "discount": "Min. 70% Off",
     "price": 60.0
   },
