@@ -9,6 +9,7 @@ import Home from "../Pages/Home";
 import Products from "../Pages/Home/Products/Products";
 import BecomeSeller from "../Components/BecomeSeller/BecomeSeller";
 import ProductView from "../Pages/Home/Products/ProductView";
+import CategoryCardView from "../Components/CategoryCard/CategoryCardView";
 
 export const routes = createBrowserRouter([
     {
@@ -43,6 +44,10 @@ export const routes = createBrowserRouter([
                 path: "/productView/:id",
                 element: <ProductView />,
             },
+            {
+                path: "/categoryCardView/:id",
+                element: <CategoryCardView />
+            }
 
         ]
 
