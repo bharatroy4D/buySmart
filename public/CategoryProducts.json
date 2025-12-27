@@ -34,7 +34,7 @@
   {
     "id": 5,
     "category": "Fashion's Top Deals",
-    "title": "Men's Sports Shoes",
+    "title": "Men's Watch",
     "image": "https://img.drz.lazcdn.com/static/bd/p/2c6060c50c1952d4884713f4be91002b.jpg_400x400q75.avif",
     "discount": "Min. 70% Off",
     "price": 120.0
@@ -83,7 +83,7 @@
     "id": 11,
     "category": "New Year Essentials",
     "title": "Suitcases",
-    "image": "/images/suitcases.jpg",
+    "image": "https://img.drz.lazcdn.com/g/kf/Sd4c84d5f024f4522b7b6b05c67168008S.jpg_400x400q75.avif",
     "discount": "Min. 70% Off",
     "price": 120.0
   },
@@ -91,7 +91,7 @@
     "id": 12,
     "category": "New Year Essentials",
     "title": "Belts",
-    "image": "/images/belts.jpg",
+    "image": "https://img.drz.lazcdn.com/static/bd/p/9ba58a8ba965b1875d2760b509c21bb2.jpg_400x400q75.avif",
     "discount": "Min. 50% Off",
     "price": 25.0
   }
