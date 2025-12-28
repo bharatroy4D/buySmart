@@ -20,7 +20,7 @@ const CategoryCardView = ({ Footer }) => {
   }
 
   return (
-    <div className="flex flex-col min-h-screen ">
+    <div className="flex max-w-6xl mx-auto flex-col min-h-screen ">
       {/* Main Container */}
       <div className="flex-1 container mx-auto px-5 py-12">
         {/* Back Button */}
@@ -121,11 +121,8 @@ const CategoryCardView = ({ Footer }) => {
             durability, comfort, and long-lasting performance. It is suitable
             for daily use and designed to meet modern lifestyle needs. Perfect
             choice for both personal use and gifting. Detailed craftsmanship
-            and thoughtful design make it a must-have item for everyday
-            convenience and style.
-            durability, comfort, and long-lasting performance. It is suitable
-            for daily use and designed to meet modern lifestyle needs. Perfect
-            choice for both personal
+            and thoughtful design make it a must-have item 
+         
           </p>
         </div>
       </div>

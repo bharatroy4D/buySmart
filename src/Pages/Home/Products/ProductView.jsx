@@ -51,7 +51,7 @@ const ProductView = () => {
   }
 
   return (
-    <div className="container mx-auto px-5 py-12">
+    <div className="container max-w-6xl mx-auto px-5 py-12 min-h-screen">
       {/* Back Button */}
       <button
         onClick={() => navigate(-1)}
@@ -165,6 +165,11 @@ const ProductView = () => {
           It is suitable for daily use and designed to meet modern
           lifestyle needs. Perfect choice for both personal use and
           gifting.
+          ensure durability, comfort, and long-lasting performance.
+          It is suitable for daily use and designed to meet modern
+          lifestyle needs. Perfect choice for both personal use and
+          gifting.
+         
         </p>
       </div>
     </div>
