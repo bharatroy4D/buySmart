@@ -22,11 +22,12 @@ const TopDeals = () => {
             className="block"
           >
             <div className="bg-white p-4 rounded-xl shadow hover:shadow-md transition">
-              <div className="flex justify-center">
+              {/* Image Container */}
+              <div className="flex justify-center items-center w-full h-32 sm:h-36 rounded-md overflow-hidden">
                 <img
                   src={product.images}
                   alt={product.name}
-                  className="w-28 h-28 sm:w-32 sm:h-32 object-cover rounded-md"
+                  className="w-full h-full object-contain"
                 />
               </div>
 
