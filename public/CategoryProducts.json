@@ -11,7 +11,7 @@
     "rating": 4.4,
     "reviews": 134,
     "stock": "In Stock",
-    "description": "Premium quality winter cap for men. Soft fabric and comfortable for daily winter use.",
+    "description": "Premium quality men's winter cap made from soft, warm, and comfortable fabric. Ideal for daily wear during cold weather, this cap is lightweight, stylish, and protects against chill. Suitable for all ages and perfect for casual or outdoor winter use.",
     "features": ["Soft Fabric", "Warm", "Lightweight", "Unisex"]
   },
   {
@@ -26,7 +26,7 @@
     "rating": 4.6,
     "reviews": 312,
     "stock": "Only few left",
-    "description": "Stylish winter jacket with inner warm lining, ideal for cold weather.",
+    "description": "Stylish men's winter jacket with inner warm lining designed for comfort and protection in cold weather. Made from premium materials, it is wind-resistant, has a durable zipper, and provides a slim fit. Perfect for casual outings or outdoor activities during winter season.",
     "features": ["Inner Fur", "Wind Resistant", "Premium Zip", "Slim Fit"]
   },
   {
@@ -41,7 +41,7 @@
     "rating": 4.2,
     "reviews": 98,
     "stock": "In Stock",
-    "description": "Comfortable cotton socks for men and women. Perfect for daily wear.",
+    "description": "Comfortable cotton socks for men and women, perfect for daily wear. Made from breathable and stretchable fabric, these socks ensure all-day comfort, prevent odor, and fit snugly. Suitable for casual, formal, or athletic wear, keeping feet warm, dry, and comfortable during winter.",
     "features": ["Cotton Fabric", "Breathable", "Stretchable"]
   },
   {
@@ -56,7 +56,7 @@
     "rating": 4.5,
     "reviews": 156,
     "stock": "In Stock",
-    "description": "Comfortable and stylish tracksuit for workouts and casual wear.",
+    "description": "Comfortable and stylish men's tracksuit suitable for workouts, jogging, or casual wear. Made with stretchable, sweat-absorbent fabric that ensures flexibility and comfort. Its slim fit design provides a modern look while keeping you warm, cozy, and fashionable during exercise or outdoor activities.",
     "features": ["Stretch Fabric", "Sweat Absorbent", "Slim Fit"]
   },
   {
@@ -71,7 +71,7 @@
     "rating": 4.8,
     "reviews": 512,
     "stock": "In Stock",
-    "description": "Stylish analog watch with premium leather strap.",
+    "description": "Elegant men's analog watch featuring a premium leather strap and stylish design. Durable, water-resistant, and precise quartz movement make it perfect for daily wear. Ideal accessory for formal or casual occasions, offering both functionality and sophistication while complementing any outfit with elegance.",
     "features": ["Water Resistant", "Leather Strap", "Quartz Movement"]
   },
   {
@@ -86,7 +86,7 @@
     "rating": 4.3,
     "reviews": 210,
     "stock": "In Stock",
-    "description": "Comfortable slippers for daily home and outdoor use.",
+    "description": "Comfortable men's slippers and flip flops designed for daily home or outdoor use. Made with soft, durable sole, and anti-slip design for safety. Lightweight and breathable material provides all-day comfort, making them perfect for casual wear, relaxing at home, or walking short distances outdoors.",
     "features": ["Anti-slip", "Soft Sole", "Durable"]
   },
   {
@@ -101,7 +101,7 @@
     "rating": 4.5,
     "reviews": 289,
     "stock": "Only few left",
-    "description": "Stylish casual shoes suitable for office and daily wear.",
+    "description": "Men's casual shoes made from premium leather, offering durability, comfort, and style. Ideal for daily wear, office, or casual outings. Soft cushioned sole ensures comfort during long hours of walking or standing. Modern design adds elegance while maintaining practicality for everyday use.",
     "features": ["Premium Leather", "Comfort Sole", "Durable"]
   },
   {
@@ -116,7 +116,7 @@
     "rating": 4.7,
     "reviews": 640,
     "stock": "In Stock",
-    "description": "Trendy wrist watch with modern dial design.",
+    "description": "Trendy wrist watch featuring a modern dial design, durable strap, and water-resistant body. Suitable for casual or formal occasions, it combines style with functionality. Precision engineering ensures long-lasting performance while adding a fashionable touch to any outfit, making it perfect for daily wear and gifting.",
     "features": ["Stylish Dial", "Water Resistant", "Strong Strap"]
   },
   {
@@ -131,7 +131,7 @@
     "rating": 4.6,
     "reviews": 178,
     "stock": "In Stock",
-    "description": "Durable laptop bag with padded compartments.",
+    "description": "Durable laptop bag with padded compartments for laptops, documents, and accessories. Water-resistant material ensures protection from spills and rain. Lightweight, spacious, and ergonomic design makes it ideal for travel, office, or college use. Stylish appearance complements professional or casual attire effectively.",
     "features": ["Water Resistant", "Laptop Protection", "Lightweight"]
   },
   {
@@ -146,7 +146,7 @@
     "rating": 4.5,
     "reviews": 224,
     "stock": "In Stock",
-    "description": "Spacious backpack for travel, school, and office use.",
+    "description": "Spacious backpack suitable for travel, school, or office use. Made with durable materials, comfortable straps, and large compartments to organize essentials efficiently. Lightweight design ensures ease of carrying. Stylish and versatile, perfect for everyday use, trips, or outdoor adventures, providing both convenience and durability.",
     "features": ["Large Capacity", "Comfort Straps", "Durable"]
   },
   {
@@ -161,7 +161,7 @@
     "rating": 4.6,
     "reviews": 198,
     "stock": "Only few left",
-    "description": "Strong and lightweight suitcase for travel.",
+    "description": "Strong, lightweight suitcase with hard shell for maximum protection during travel. Features TSA-approved lock and smooth wheels for easy mobility. Spacious interior compartments provide organized storage. Perfect for short trips, vacations, or business travel. Durable and stylish design ensures reliability and convenience for travelers.",
     "features": ["Hard Shell", "TSA Lock", "Smooth Wheels"]
   },
   {
@@ -176,7 +176,7 @@
     "rating": 4.3,
     "reviews": 112,
     "stock": "In Stock",
-    "description": "Classic leather belt suitable for formal and casual wear.",
+    "description": "Classic leather belt suitable for formal and casual wear. Made with genuine leather and durable buckle, adjustable to fit comfortably. Elegant design enhances outfit style. Perfect accessory for trousers or jeans. Provides both durability and a fashionable touch for everyday or special occasions with long-lasting usage.",
     "features": ["Genuine Leather", "Adjustable", "Durable Buckle"]
   }
 ]
