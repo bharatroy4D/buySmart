@@ -3,6 +3,7 @@ import { CiSearch } from "react-icons/ci";
 import { FaRegUserCircle } from "react-icons/fa";
 import { FaStore } from "react-icons/fa6";
 import { FiMenu, FiX } from "react-icons/fi";
+import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -119,8 +120,8 @@ const Navbar = () => {
       <div className="lg:hidden fixed bottom-0 left-0 w-full bg-white shadow-lg border-t flex items-center justify-around px-6 py-2 z-50">
 
         <Link to="/" className="flex flex-col items-center text-gray-700">
-          <FiMenu className="text-2xl" />
-          <span className="text-xs">Menu</span>
+          <IoHomeOutline className="text-2xl" />
+          <span className="text-xs">Home</span>
         </Link>
 
         <Link to="/shopCart" className="flex flex-col items-center text-gray-700">
