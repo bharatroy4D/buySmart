@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // Single Product Card
 const ProductCard = ({ item }) => {
+  const navigate = useNavigate();
+
   return (
-    <div className="bg-white border border-gray-300 rounded p-3 hover:shadow-lg transition-all duration-300 cursor-pointer">
+    <div
+      onClick={() => navigate(`/categoryCardView/${item.id}`, { state: item })}
+      className="bg-white border border-gray-300 rounded p-3 hover:shadow-lg transition-all duration-300 cursor-pointer"
+    >
       <img
         src={item.image}
         alt={item.title}
@@ -21,10 +27,9 @@ const CategorySection = ({ category, products }) => {
     <div className="bg-white p-4 rounded shadow-sm">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-semibold text-gray-800">{category}</h2>
-        <span className="text-blue-600 hover:text-blue-800 cursor-pointer font-medium">
-          →
-        </span>
+        <span className="text-blue-600 cursor-pointer font-medium">→</span>
       </div>
+
       <div className="grid grid-cols-2 gap-2">
         {products.map((item) => (
           <ProductCard key={item.id} item={item} />
@@ -42,7 +47,6 @@ const CategoryCards = () => {
     fetch("/CategoryProducts.json")
       .then((res) => res.json())
       .then((data) => setProducts(data))
-      .catch((err) => console.error(err))
       .finally(() => setLoading(false));
   }, []);
 
@@ -50,21 +54,22 @@ const CategoryCards = () => {
 
   return (
     <div className="container mx-auto px-4 py-8 grid lg:grid-cols-3 gap-6">
-      {loading ? (
-        [...Array(3)].map((_, i) => (
-          <div key={i} className="h-72 bg-gray-200 rounded-lg animate-pulse" />
-        ))
-      ) : (
-        categories.map((category, idx) => (
-          <CategorySection
-            key={idx}
-            category={category}
-            products={products
-              .filter((p) => p.category === category)
-              .slice(0, 4)} // show 4 items per category
-          />
-        ))
-      )}
+      {loading
+        ? [...Array(3)].map((_, i) => (
+            <div
+              key={i}
+              className="h-72 bg-gray-200 rounded-lg animate-pulse"
+            />
+          ))
+        : categories.map((category, idx) => (
+            <CategorySection
+              key={idx}
+              category={category}
+              products={products
+                .filter((p) => p.category === category)
+                .slice(0, 4)}
+            />
+          ))}
     </div>
   );
 };

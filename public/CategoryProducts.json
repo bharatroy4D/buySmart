@@ -5,7 +5,14 @@
     "title": "Men's Caps",
     "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/cap/w/a/k/free-2-in1-cap-zauky-resized-2-original-imah7vuvfprfebaf.jpeg?q=70",
     "discount": "Special offer",
-    "price": 15.0
+    "price": 15,
+    "oldPrice": 25,
+    "brand": "Zauky",
+    "rating": 4.4,
+    "reviews": 134,
+    "stock": "In Stock",
+    "description": "Premium quality winter cap for men. Soft fabric and comfortable for daily winter use.",
+    "features": ["Soft Fabric", "Warm", "Lightweight", "Unisex"]
   },
   {
     "id": 2,
@@ -13,7 +20,14 @@
     "title": "Men's Jackets",
     "image": "https://rukminim2.flixcart.com/image/420/420/xif0q/jacket/s/q/q/m-1-no-white-signature-platinumcartz-original-imahgwfvk4zfhgjy.jpeg?q=60",
     "discount": "Min. 50% Off",
-    "price": 80.0
+    "price": 80,
+    "oldPrice": 160,
+    "brand": "PlatinumCartz",
+    "rating": 4.6,
+    "reviews": 312,
+    "stock": "Only few left",
+    "description": "Stylish winter jacket with inner warm lining, ideal for cold weather.",
+    "features": ["Inner Fur", "Wind Resistant", "Premium Zip", "Slim Fit"]
   },
   {
     "id": 3,
@@ -21,7 +35,14 @@
     "title": "Men's and Women's Socks",
     "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/sock/i/o/t/free-3-article-02-yotoe-original-imahgzqrdff26yhk.jpeg?q=70",
     "discount": "Min. 50% Off",
-    "price": 5.0
+    "price": 5,
+    "oldPrice": 10,
+    "brand": "Yotoe",
+    "rating": 4.2,
+    "reviews": 98,
+    "stock": "In Stock",
+    "description": "Comfortable cotton socks for men and women. Perfect for daily wear.",
+    "features": ["Cotton Fabric", "Breathable", "Stretchable"]
   },
   {
     "id": 4,
@@ -29,7 +50,14 @@
     "title": "Men's Tracksuits",
     "image": "https://img.drz.lazcdn.com/static/bd/p/79d88d5148b0c7eaa556908e563d9789.jpg_400x400q75.avif",
     "discount": "Special offer",
-    "price": 50.0
+    "price": 50,
+    "oldPrice": 90,
+    "brand": "SportX",
+    "rating": 4.5,
+    "reviews": 156,
+    "stock": "In Stock",
+    "description": "Comfortable and stylish tracksuit for workouts and casual wear.",
+    "features": ["Stretch Fabric", "Sweat Absorbent", "Slim Fit"]
   },
   {
     "id": 5,
@@ -37,7 +65,14 @@
     "title": "Men's Watch",
     "image": "https://img.drz.lazcdn.com/static/bd/p/2c6060c50c1952d4884713f4be91002b.jpg_400x400q75.avif",
     "discount": "Min. 70% Off",
-    "price": 120.0
+    "price": 120,
+    "oldPrice": 400,
+    "brand": "TimeX",
+    "rating": 4.8,
+    "reviews": 512,
+    "stock": "In Stock",
+    "description": "Stylish analog watch with premium leather strap.",
+    "features": ["Water Resistant", "Leather Strap", "Quartz Movement"]
   },
   {
     "id": 6,
@@ -45,7 +80,14 @@
     "title": "Men's Slippers & Flip Flops",
     "image": "https://img.drz.lazcdn.com/static/bd/p/2da1b422207948120728834151d43610.jpg_400x400q80.jpg_.avif",
     "discount": "Min. 70% Off",
-    "price": 20.0
+    "price": 20,
+    "oldPrice": 60,
+    "brand": "Relaxo",
+    "rating": 4.3,
+    "reviews": 210,
+    "stock": "In Stock",
+    "description": "Comfortable slippers for daily home and outdoor use.",
+    "features": ["Anti-slip", "Soft Sole", "Durable"]
   },
   {
     "id": 7,
@@ -53,7 +95,14 @@
     "title": "Men's Casual Shoes",
     "image": "https://img.drz.lazcdn.com/static/bd/p/0e4b0793fa2d4c5f494d7c9697d29598.jpg_400x400q75.avif",
     "discount": "Min. 70% Off",
-    "price": 90.0
+    "price": 90,
+    "oldPrice": 300,
+    "brand": "Roadster",
+    "rating": 4.5,
+    "reviews": 289,
+    "stock": "Only few left",
+    "description": "Stylish casual shoes suitable for office and daily wear.",
+    "features": ["Premium Leather", "Comfort Sole", "Durable"]
   },
   {
     "id": 8,
@@ -61,7 +110,14 @@
     "title": "Wrist Watches",
     "image": "https://img.drz.lazcdn.com/static/bd/p/5881f40c5ef284a55c457714b4091a71.jpg_400x400q75.avif",
     "discount": "Min. 90% Off",
-    "price": 150.0
+    "price": 150,
+    "oldPrice": 800,
+    "brand": "Fastrack",
+    "rating": 4.7,
+    "reviews": 640,
+    "stock": "In Stock",
+    "description": "Trendy wrist watch with modern dial design.",
+    "features": ["Stylish Dial", "Water Resistant", "Strong Strap"]
   },
   {
     "id": 9,
@@ -69,7 +125,14 @@
     "title": "Laptop Bags",
     "image": "https://img.drz.lazcdn.com/static/bd/p/a6ed5a88cb2052cefde7144ff08847b3.png_400x400q75.avif",
     "discount": "Min. 70% Off",
-    "price": 70.0
+    "price": 70,
+    "oldPrice": 200,
+    "brand": "Skybags",
+    "rating": 4.6,
+    "reviews": 178,
+    "stock": "In Stock",
+    "description": "Durable laptop bag with padded compartments.",
+    "features": ["Water Resistant", "Laptop Protection", "Lightweight"]
   },
   {
     "id": 10,
@@ -77,7 +140,14 @@
     "title": "Backpacks",
     "image": "https://img.drz.lazcdn.com/static/bd/p/56cc7063296cd5b59ebad089784a8bb5.jpg_400x400q80.jpg_.avif",
     "discount": "Min. 70% Off",
-    "price": 60.0
+    "price": 60,
+    "oldPrice": 180,
+    "brand": "Wildcraft",
+    "rating": 4.5,
+    "reviews": 224,
+    "stock": "In Stock",
+    "description": "Spacious backpack for travel, school, and office use.",
+    "features": ["Large Capacity", "Comfort Straps", "Durable"]
   },
   {
     "id": 11,
@@ -85,7 +155,14 @@
     "title": "Suitcases",
     "image": "https://img.drz.lazcdn.com/g/kf/Sd4c84d5f024f4522b7b6b05c67168008S.jpg_400x400q75.avif",
     "discount": "Min. 70% Off",
-    "price": 120.0
+    "price": 120,
+    "oldPrice": 350,
+    "brand": "Safari",
+    "rating": 4.6,
+    "reviews": 198,
+    "stock": "Only few left",
+    "description": "Strong and lightweight suitcase for travel.",
+    "features": ["Hard Shell", "TSA Lock", "Smooth Wheels"]
   },
   {
     "id": 12,
@@ -93,6 +170,13 @@
     "title": "Belts",
     "image": "https://img.drz.lazcdn.com/static/bd/p/9ba58a8ba965b1875d2760b509c21bb2.jpg_400x400q75.avif",
     "discount": "Min. 50% Off",
-    "price": 25.0
+    "price": 25,
+    "oldPrice": 50,
+    "brand": "Urban Fashion",
+    "rating": 4.3,
+    "reviews": 112,
+    "stock": "In Stock",
+    "description": "Classic leather belt suitable for formal and casual wear.",
+    "features": ["Genuine Leather", "Adjustable", "Durable Buckle"]
   }
 ]
