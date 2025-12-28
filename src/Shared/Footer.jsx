@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 pt-16">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="container mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Logo & About */}
         <div>
           <h1 className="text-3xl font-bold text-purple-600 mb-4">ShopZen</h1>
