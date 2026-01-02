@@ -4,17 +4,13 @@ import { Link } from "react-router-dom";
 
 const MainProducts = ({ category }) => {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [sortOrder, setSortOrder] = useState("asc");
 
   useEffect(() => {
     fetch("/products.json")
       .then((res) => res.json())
-      .then((data) => {
-        setProducts(data);
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
+      .then((data) => setProducts(data))
+      .catch((err) => console.error(err));
   }, []);
 
   const filteredProducts =
@@ -25,16 +21,6 @@ const MainProducts = ({ category }) => {
   const sortedProducts = [...filteredProducts].sort((a, b) =>
     sortOrder === "asc" ? a.price - b.price : b.price - a.price
   );
-
-  if (loading) {
-    return (
-      <div className="w-full flex justify-center py-24">
-        <p className="text-lg font-medium text-green-600">
-          Loading products...
-        </p>
-      </div>
-    );
-  }
 
   return (
     <div className="w-full md:w-[80%] mx-auto">
