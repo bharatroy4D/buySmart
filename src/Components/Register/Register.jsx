@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext/AuthContext";
+import toast from "react-hot-toast";
 
 const Register = () => {
   const { registerUser } = useContext(AuthContext)
@@ -21,6 +22,7 @@ const Register = () => {
     try {
       const result = await registerUser(email, password);
       console.log(result);
+      toast.success("Account created successfully! 🎉");
     } catch (error) {
       console.log('register error', error.message);
     }
