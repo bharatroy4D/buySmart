@@ -1,20 +1,29 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { AuthContext } from "../../context/AuthContext/AuthContext";
 
 const Register = () => {
+  const { registerUser } = useContext(AuthContext)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     password: "",
     confirmPassword: "",
   });
+  const { email, password, confirmPassword } = formData;
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Register Data:", formData);
+    try {
+      const result = await registerUser(email, password);
+      console.log(result);
+    } catch (error) {
+      console.log('register error', error.message);
+    }
   };
 
   return (
@@ -52,7 +61,7 @@ const Register = () => {
 
           {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
-        
+
 
             {/* Email */}
             <div>
