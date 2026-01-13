@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top Navbar */}
-      <nav className="bg-red-400 shadow-md sticky top-0 z-50">
+      <nav className="bg-gray-800 shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-5 py-3 flex items-center justify-between">
 
           {/* Logo (Desktop) */}
