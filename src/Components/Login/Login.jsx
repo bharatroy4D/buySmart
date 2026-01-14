@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext/AuthContext";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const { loginUser, googleLogin } = useContext(AuthContext);
@@ -138,12 +139,13 @@ const Login = () => {
           {/* Footer */}
           <p className="text-center text-gray-600 mt-6 text-sm">
             Don’t have an account?{" "}
-            <a
+            <Link to={'/register'} className="text-green-600 font-medium hover:underline">create account</Link>
+            {/* <a
               href="/register"
               className="text-green-600 font-medium hover:underline"
             >
               Create Account
-            </a>
+            </a> */}
           </p>
         </div>
       </div>
