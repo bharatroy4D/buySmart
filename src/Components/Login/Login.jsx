@@ -36,8 +36,8 @@ const Login = () => {
             <div className="w-24 h-24 mx-auto flex items-center justify-center rounded-full bg-red-100 text-red-600 font-bold text-3xl mb-6">
               🔐
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-2">
-              Welcome Back
+            <h2 className="text-4xl font-bold text-gray-700 mb-2">
+              Login
             </h2>
             <p className="text-gray-600 text-lg">
               Login to access your professional dashboard
@@ -46,7 +46,7 @@ const Login = () => {
         </div>
 
         {/* ----------------- Right Side (Form) ----------------- */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-4 lg:px-12 py-6 lg:py-0">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center px-4 lg:px-8 py-6 lg:py-0">
           {/* Header for Mobile */}
           <div className="lg:hidden text-center mb-8">
             <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-red-100 text-red-600 font-bold text-2xl mb-4">
@@ -61,7 +61,7 @@ const Login = () => {
           </div>
 
           {/* Form */}
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-3">
             {/* Email */}
             <div>
               <label className="block text-gray-700 font-medium mb-2">

@@ -41,8 +41,8 @@ const Register = () => {
             <div className="w-24 h-24 mx-auto flex items-center justify-center rounded-full bg-blue-100 text-blue-600 font-bold text-3xl mb-6">
               ✨
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-2">
-              Join Us
+            <h2 className="text-4xl font-bold text-gray-700 mb-2">
+              Register
             </h2>
             <p className="text-gray-600 text-lg">
               Create your account and start your journey today
@@ -51,7 +51,7 @@ const Register = () => {
         </div>
 
         {/* ---------------- Right Side Form ---------------- */}
-        <div className="w-full lg:w-1/2 px-6 lg:px-12 py-8 lg:py-12 flex flex-col justify-center">
+        <div className="w-full lg:w-1/2 px-6 lg:px-12 py-8  flex flex-col justify-center">
 
           {/* Header for Mobile */}
           <div className="lg:hidden text-center mb-8">
@@ -65,7 +65,7 @@ const Register = () => {
           </div>
 
           {/* Form */}
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-3">
 
 
             {/* Email */}
