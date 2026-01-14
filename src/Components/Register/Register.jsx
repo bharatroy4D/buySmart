@@ -1,8 +1,11 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-  const { registerUser, setUser } = useContext(AuthContext)
+  const navigate = useNavigate();
+  const { registerUser, setUser } = useContext(AuthContext);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -22,6 +25,7 @@ const Register = () => {
       setUser(result.user);
       console.log(result);
       alert("registration successful ")
+      navigate('/')
     } catch (error) {
       console.log('register error', error.message);
     }
