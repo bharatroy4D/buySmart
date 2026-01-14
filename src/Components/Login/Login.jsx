@@ -2,12 +2,15 @@ import React, { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext/AuthContext";
 
 const Login = () => {
-  const { loginUser } = useContext(AuthContext);
+  const { loginUser, googleLogin } = useContext(AuthContext);
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
   const { email, password } = formData;
+  const handleGoogleLogin = () => {
+    googleLogin();
+  }
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -119,6 +122,18 @@ const Login = () => {
               Login
             </button>
           </form>
+          {/* Google Login */}
+          <button
+            onClick={handleGoogleLogin}
+            className="w-full flex items-center justify-center gap-3 border border-gray-300 py-3 my-5 rounded-xl shadow-sm hover:bg-gray-50 transition"
+          >
+            <img
+              src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+              alt="Google"
+              className="w-6 h-6"
+            />
+            <span className="text-gray-700 font-medium">Continue with Google</span>
+          </button>
 
           {/* Footer */}
           <p className="text-center text-gray-600 mt-6 text-sm">
