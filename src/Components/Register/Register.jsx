@@ -25,7 +25,7 @@ const Register = () => {
       setUser(result.user);
       console.log(result);
       alert("registration successful ")
-      navigate('/')
+      navigate('/login')
     } catch (error) {
       console.log('register error', error.message);
     }

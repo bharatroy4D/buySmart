@@ -17,9 +17,12 @@ const Navbar = () => {
         <div className="container mx-auto px-5 py-3 flex items-center justify-between">
 
           {/* Logo (Desktop) */}
-          <Link to="/" className="hidden lg:block text-3xl font-bold text-white tracking-wide">
-            Shopzen
-          </Link>
+          <div className="flex items-center gap-2">
+            <img className="w-12" src="https://i.ibb.co.com/knzTq8R/checkout.png" alt="icon" />
+            <Link to="/" className="hidden lg:block text-3xl font-medium text-white tracking-wide">
+              <span className="font-stretch-100%">Shopzen</span>
+            </Link>
+          </div>
 
           {/* Desktop Search */}
           <div className="hidden lg:flex flex-1 max-w-md mx-6 relative">

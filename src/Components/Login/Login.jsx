@@ -1,9 +1,11 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext/AuthContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const { loginUser, googleLogin } = useContext(AuthContext);
+  const { loginUser, googleLogin ,user, setUser} = useContext(AuthContext);
+  console.log(user)
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -21,7 +23,10 @@ const Login = () => {
     e.preventDefault();
     try {
       const result = await loginUser(email, password)
+      setUser(result)
       console.log(result);
+      alert('Login successful')
+      navigate('/')
     } catch (error) {
       console.log('login error', error.message);
     }
@@ -126,7 +131,7 @@ const Login = () => {
           {/* Google Login */}
           <button
             onClick={handleGoogleLogin}
-            className="w-full flex items-center justify-center gap-3 border border-gray-300 py-3 my-5 rounded-xl shadow-sm hover:bg-gray-50 transition"
+            className="w-full flex items-center justify-center gap-3 border border-gray-300 py-3 my-5 rounded-xl shadow-sm hover:bg-gray-50 transition hover:cursor-pointer"
           >
             <img
               src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
