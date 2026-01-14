@@ -1,16 +1,15 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext/AuthContext";
-import toast from "react-hot-toast";
 
 const Register = () => {
-  const { registerUser } = useContext(AuthContext)
+  const { registerUser, setUser } = useContext(AuthContext)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     password: "",
     confirmPassword: "",
   });
-  const { email, password, confirmPassword } = formData;
+  const { email, password } = formData;
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -18,11 +17,11 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Register Data:", formData);
     try {
-      const result = await registerUser(email, password);
+      const result = await registerUser(email, password)
+      setUser(result.user);
       console.log(result);
-      toast.success("Account created successfully! 🎉");
+      alert("registration successful ")
     } catch (error) {
       console.log('register error', error.message);
     }
