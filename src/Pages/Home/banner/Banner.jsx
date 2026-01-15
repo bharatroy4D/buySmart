@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import banner_1 from "../../../assets/banner_img/Smartphone Banner.png";
-import banner_2 from "../../../assets/banner_img/smartwatch electronics.png";
+import banner_2 from "../../../assets/banner_img/Shops Banner .png";
 import banner_3 from "../../../assets/banner_img/Appliances Banner.png";
 
 // Custom Next Arrow

@@ -129,14 +129,14 @@ const Navbar = () => {
 
 
           {/* Mobile Search (Top) */}
-          <CiSearch onClick={() => setShowSearch(!showSearch)} className="lg:hidden text-3xl text-white" />
+          <CiSearch  onClick={() => setShowSearch(!showSearch)}  className="lg:hidden text-3xl text-white" />
 
           {/* Search Input (Toggle Show/Hide) */}
           {showSearch && (
-            <input
+            <input r
               type="text"
               placeholder="Search product..."
-              className="absolute top-16 right-5 w-[80%] p-3 border border-green-500 shadow-2xl  rounded-lg bg-base-300 text-black outline-none"
+              className="absolute  top-16 right-5 w-[80%] p-3 border border-green-500 shadow-2xl  rounded-lg bg-base-300 text-black outline-none"
             />
           )}
         </div>
