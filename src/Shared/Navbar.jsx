@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { FaRegUserCircle } from "react-icons/fa";
 import { FaStore } from "react-icons/fa6";
@@ -10,11 +10,24 @@ import { AuthContext } from "../context/AuthContext/AuthContext";
 
 const Navbar = () => {
   const { user } = useContext(AuthContext);
+  const profileRef = useRef(null);
   console.log(user);
   const [isOpen, setIsOpen] = useState(false)
   const [showSearch, setShowSearch] = useState(false);
   const [openProfile, setOpenProfile] = useState(false);
 
+  // Close profile when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (profileRef.current && !profileRef.current.contains(event.target)) {
+        setOpenProfile(false)
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [])
   return (
     <>
       {/* Top Navbar */}
@@ -63,7 +76,7 @@ const Navbar = () => {
             {
               user ? <div className="rounded-full">
                 {/* profile Popup */}
-                <div className="relative">
+                <div className="relative" ref={profileRef}>
                   <img onClick={() => setOpenProfile(!openProfile)}
                     className="w-8 h-8 rounded-full hover:cursor-pointer shadow-md border border-green-600"
                     src={user?.photoURL || "https://i.ibb.co.com/WHCV5w4/default-avatar.png"}
