@@ -36,8 +36,8 @@ const Navbar = () => {
 
           {/* Logo (Desktop) */}
           <div className="flex items-center gap-2">
-            <Link to="/" className=" flex items-center gap-2 text-2xl lg:text-3xl font-medium text-white tracking-wide">
-              <img className="w-12" src="https://i.ibb.co.com/knzTq8R/checkout.png" alt="icon" />
+            <Link to="/" className=" flex items-center gap-2 text-2xl  font-medium text-white tracking-wide">
+              <img className="w-9" src="https://i.ibb.co.com/knzTq8R/checkout.png" alt="icon" />
               <span className="font-stretch-100%">Shopzen</span>
             </Link>
           </div>
@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center gap-6 text-white">
             <Link
               to="/shopCart"
-              className="flex items-center gap-2 hover:text-gray-200 transition"
+              className="flex items-center hover:bg-blue-800 p-2 rounded-lg gap-2 hover:text-gray-200 transition"
             >
               <MdOutlineShoppingCart className="text-3xl p-1" />
               <span className="text-sm font-medium">Cart</span>
@@ -67,7 +67,7 @@ const Navbar = () => {
 
             <Link
               to="/becomeSeller"
-              className="flex items-center gap-2 hover:text-gray-200 transition"
+              className="flex items-center hover:bg-blue-800 p-2 rounded-lg gap-2 hover:text-gray-200 transition"
             >
               <FaStore className="text-3xl p-1" />
               <span className="text-sm font-medium">Become a Seller</span>
@@ -114,7 +114,7 @@ const Navbar = () => {
                     </div>
                   )}
                 </div>
-              </div> : (<div>
+              </div> : (<div className="hover:bg-blue-800 p-2 rounded-lg">
                 <Link
                   to="/login"
                   className="flex items-center gap-2 hover:text-gray-200 transition"

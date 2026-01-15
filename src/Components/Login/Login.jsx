@@ -1,9 +1,13 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+
 
 const Login = () => {
   const { loginUser, googleLogin ,user, setUser} = useContext(AuthContext);
+  const [showPassword, setShowPassword] = useState(false);
+
   console.log(user)
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -86,23 +90,33 @@ const Login = () => {
               />
             </div>
 
-            {/* Password */}
-            <div>
-              <label className="block text-gray-700 font-medium mb-2">
-                Password
-              </label>
-              <input
-                type="password"
-                name="password"
-                value={formData.password}
-                onChange={handleChange}
-                placeholder="••••••••"
-                className="w-full px-5 py-3 border border-gray-300 rounded-xl
-                           focus:outline-none focus:ring-2 focus:ring-green-500
-                           text-gray-900 placeholder-gray-400 transition"
-                required
-              />
-            </div>
+         {/* Password */}
+<div className="relative">
+  <label className="block text-gray-700 font-medium mb-2">
+    Password
+  </label>
+
+  <input
+    type={showPassword ? "text" : "password"}
+    name="password"
+    value={formData.password}
+    onChange={handleChange}
+    placeholder="••••••••"
+    className="w-full px-5 py-3 border border-gray-300 rounded-xl
+               focus:outline-none focus:ring-2 focus:ring-green-500
+               text-gray-900 placeholder-gray-400 transition"
+    required
+  />
+
+  {/* Eye Icon */}
+  <span
+    onClick={() => setShowPassword(!showPassword)}
+    className="absolute right-5 top-12 text-gray-600 cursor-pointer text-xl"
+  >
+    {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
+  </span>
+</div>
+
 
             {/* Extra options */}
             <div className="flex items-center justify-between text-sm">
@@ -122,8 +136,8 @@ const Login = () => {
             {/* Button */}
             <button
               type="submit"
-              className="w-full bg-green-600 text-white py-3 rounded-xl
-                         font-semibold hover:bg-green-700 transition text-lg"
+              className="w-full bg-blue-800 text-white py-3 rounded-xl
+                         font-semibold hover:bg-blue-700 transition text-lg"
             >
               Login
             </button>

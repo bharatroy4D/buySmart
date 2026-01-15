@@ -1,10 +1,16 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+
 
 const Register = () => {
   const navigate = useNavigate();
   const { registerUser, setUser } = useContext(AuthContext);
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+
+
 
   const [formData, setFormData] = useState({
     name: "",
@@ -65,12 +71,12 @@ const Register = () => {
           </div>
 
           {/* Form */}
-          <form onSubmit={handleSubmit} className="space-y-3">
+          <form onSubmit={handleSubmit} className="space-y-3 ">
 
 
             {/* Email */}
             <div>
-              <label className="block text-gray-700 font-medium mb-2">
+              <label className="block text-gray-700 font-medium mb-2 font-sans">
                 Email Address
               </label>
               <input
@@ -86,47 +92,66 @@ const Register = () => {
               />
             </div>
 
+
             {/* Password */}
-            <div>
+            <div className="relative">
               <label className="block text-gray-700 font-medium mb-2">
                 Password
               </label>
+
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 name="password"
                 value={formData.password}
                 onChange={handleChange}
                 placeholder="••••••••"
                 className="w-full px-5 py-3 border border-gray-300 rounded-xl
-                           focus:outline-none focus:ring-2 focus:ring-green-500
-                           text-gray-900 placeholder-gray-400 transition"
+               focus:outline-none focus:ring-2 focus:ring-green-500
+               text-gray-900 placeholder-gray-400 transition"
                 required
               />
+
+              <span
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-5 top-12 text-gray-600 cursor-pointer text-xl"
+              >
+                {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
+              </span>
             </div>
 
+
             {/* Confirm Password */}
-            <div>
+            <div className="relative">
               <label className="block text-gray-700 font-medium mb-2">
                 Confirm Password
               </label>
+
               <input
-                type="password"
+                type={showConfirmPassword ? "text" : "password"}
                 name="confirmPassword"
                 value={formData.confirmPassword}
                 onChange={handleChange}
                 placeholder="••••••••"
                 className="w-full px-5 py-3 border border-gray-300 rounded-xl
-                           focus:outline-none focus:ring-2 focus:ring-green-500
-                           text-gray-900 placeholder-gray-400 transition"
+               focus:outline-none focus:ring-2 focus:ring-green-500
+               text-gray-900 placeholder-gray-400 transition"
                 required
               />
+
+              <span
+                onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                className="absolute right-5 top-12 text-gray-600 cursor-pointer text-xl"
+              >
+                {showConfirmPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
+              </span>
             </div>
+
 
             {/* Button */}
             <button
               type="submit"
-              className="w-full bg-green-500 text-white py-3 rounded-xl
-                         font-semibold text-lg hover:bg-green-600
+              className="w-full bg-blue-800 text-white py-3 rounded-xl
+                         font-semibold text-lg hover:bg-blue-700
                          transition duration-300 shadow-md"
             >
               Create Account
