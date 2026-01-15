@@ -19,7 +19,7 @@ const Navbar = () => {
           {/* Logo (Desktop) */}
           <div className="flex items-center gap-2">
             <img className="w-12" src="https://i.ibb.co.com/knzTq8R/checkout.png" alt="icon" />
-            <Link to="/" className="hidden lg:block text-3xl font-medium text-white tracking-wide">
+            <Link to="/" className=" text-2xl lg:text-3xl font-medium text-white tracking-wide">
               <span className="font-stretch-100%">Shopzen</span>
             </Link>
           </div>
@@ -63,27 +63,8 @@ const Navbar = () => {
               <span className="text-sm font-medium">Login</span>
             </Link>
           </div>
-
           {/* Mobile Search (Top) */}
-          <div className="lg:hidden flex-1 relative">
-            <input
-              type="text"
-              placeholder="Search products..."
-              className="w-full px-4 py-3 bg-gray-100 rounded-lg
-                         focus:outline-none focus:ring-2 focus:ring-red-400"
-            />
-            <CiSearch className="absolute right-4 top-3 text-2xl text-gray-500" />
-          </div>
-
-          {/* Mobile Menu Button */}
-          {/* <div className="lg:hidden ml-3">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-3xl text-white"
-            >
-              {isOpen ? <FiX /> : <FiMenu />}
-            </button>
-          </div> */}
+          <CiSearch className="lg:hidden text-3xl text-white" />
         </div>
 
         {/* Mobile Dropdown Menu */}
