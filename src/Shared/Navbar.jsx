@@ -8,7 +8,8 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
+  const [showSearch, setShowSearch] = useState(false);
 
   return (
     <>
@@ -64,9 +65,18 @@ const Navbar = () => {
             </Link>
           </div>
           {/* Mobile Search (Top) */}
-          <CiSearch className="lg:hidden text-3xl text-white" />
+          <CiSearch onClick={() => setShowSearch(!showSearch)} className="lg:hidden text-3xl text-white" />
+         
+          {/* Search Input (Toggle Show/Hide) */}
+          {showSearch && (
+            <input
+              type="text"
+              placeholder="Search product..."
+              className="absolute top-16 right-5 w-[80%] p-3 border border-green-500 shadow-2xl  rounded-3xl bg-base-300 text-black outline-none"
+            />
+          )}
         </div>
-
+        
         {/* Mobile Dropdown Menu */}
         {isOpen && (
           <div className="lg:hidden bg-gray-50 px-5 pb-4 space-y-4 shadow-lg">
@@ -96,10 +106,6 @@ const Navbar = () => {
           </div>
         )}
       </nav>
-
-      {/* ------------------------------------------------------------- */}
-      {/*      🔥 Bottom Fixed Mobile Navbar (Always visible)           */}
-      {/* ------------------------------------------------------------- */}
 
       <div className="lg:hidden fixed bottom-0 left-0 w-full bg-white shadow-lg border-t flex items-center justify-around px-6 py-2 z-50">
 
