@@ -13,6 +13,7 @@ const Navbar = () => {
   console.log(user);
   const [isOpen, setIsOpen] = useState(false)
   const [showSearch, setShowSearch] = useState(false);
+  const [openProfile, setOpenProfile] = useState(false);
 
   return (
     <>
@@ -22,8 +23,8 @@ const Navbar = () => {
 
           {/* Logo (Desktop) */}
           <div className="flex items-center gap-2">
-            <img className="w-12" src="https://i.ibb.co.com/knzTq8R/checkout.png" alt="icon" />
-            <Link to="/" className=" text-2xl lg:text-3xl font-medium text-white tracking-wide">
+            <Link to="/" className=" flex items-center gap-2 text-2xl lg:text-3xl font-medium text-white tracking-wide">
+              <img className="w-12" src="https://i.ibb.co.com/knzTq8R/checkout.png" alt="icon" />
               <span className="font-stretch-100%">Shopzen</span>
             </Link>
           </div>
@@ -61,8 +62,45 @@ const Navbar = () => {
 
             {
               user ? <div className="rounded-full">
-                <img className="w-8 h-8 rounded-full hover:cursor-pointer shadow-md border border-green-600" src={user.photoURL
-                } alt="photoURL" />
+                {/* profile Popup */}
+                <div className="relative">
+                  <img onClick={() => setOpenProfile(!openProfile)}
+                    className="w-8 h-8 rounded-full hover:cursor-pointer shadow-md border border-green-600"
+                    src={user?.photoURL || "https://i.ibb.co.com/WHCV5w4/default-avatar.png"}
+                    alt="profile"
+                  />
+
+                  {/* Profile Popup */}
+                  {openProfile && (
+                    <div className="absolute right-0 mt-3 w-48 bg-white shadow-xl rounded-xl p-4 z-50">
+
+                      <div className="flex flex-col items-center border-b pb-2">
+                        <img
+                          className="w-10 h-10 rounded-full"
+                          src={user?.photoURL}
+                          alt="profile"
+                        />
+                        <div>
+                          <h4 className="text-sm text-center font-semibold text-black">{user?.displayName}</h4>
+                          <p className="text-xs text-center text-gray-600">{user?.email}</p>
+                        </div>
+                      </div>
+
+                      <div className="mt-3 flex flex-col gap-2">
+                        <button className="text-left text-gray-800 px-2 py-1 hover:bg-gray-100 rounded">
+                          Profile
+                        </button>
+                        <button className="text-left text-gray-800 px-2 py-1 hover:bg-gray-100 rounded">
+                          Settings
+                        </button>
+                        <button className="text-left px-2 py-1 bg-red-500 text-white rounded">
+                          Logout
+                        </button>
+                      </div>
+
+                    </div>
+                  )}
+                </div>
               </div> : (<div>
                 <Link
                   to="/login"
@@ -74,6 +112,9 @@ const Navbar = () => {
               </div>)
             }
           </div>
+
+
+
           {/* Mobile Search (Top) */}
           <CiSearch onClick={() => setShowSearch(!showSearch)} className="lg:hidden text-3xl text-white" />
 
