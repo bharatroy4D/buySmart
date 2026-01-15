@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { FaRegUserCircle } from "react-icons/fa";
 import { FaStore } from "react-icons/fa6";
@@ -6,8 +6,11 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext/AuthContext";
 
 const Navbar = () => {
+  const { user } = useContext(AuthContext);
+  console.log(user);
   const [isOpen, setIsOpen] = useState(false)
   const [showSearch, setShowSearch] = useState(false);
 
@@ -56,27 +59,34 @@ const Navbar = () => {
               <span className="text-sm font-medium">Become a Seller</span>
             </Link>
 
-            <Link
-              to="/login"
-              className="flex items-center gap-2 hover:text-gray-200 transition"
-            >
-              <FaRegUserCircle className="text-xl" />
-              <span className="text-sm font-medium">Login</span>
-            </Link>
+            {
+              user ? <div className="rounded-full">
+                <img className="w-8 h-8 rounded-full hover:cursor-pointer shadow-md border border-green-600" src={user.photoURL
+                } alt="photoURL" />
+              </div> : (<div>
+                <Link
+                  to="/login"
+                  className="flex items-center gap-2 hover:text-gray-200 transition"
+                >
+                  <FaRegUserCircle className="text-xl" />
+                  <span className="text-sm font-medium">Login</span>
+                </Link>
+              </div>)
+            }
           </div>
           {/* Mobile Search (Top) */}
           <CiSearch onClick={() => setShowSearch(!showSearch)} className="lg:hidden text-3xl text-white" />
-         
+
           {/* Search Input (Toggle Show/Hide) */}
           {showSearch && (
             <input
               type="text"
               placeholder="Search product..."
-              className="absolute top-16 right-5 w-[80%] p-3 border border-green-500 shadow-2xl  rounded-3xl bg-base-300 text-black outline-none"
+              className="absolute top-16 right-5 w-[80%] p-3 border border-green-500 shadow-2xl  rounded-lg bg-base-300 text-black outline-none"
             />
           )}
         </div>
-        
+
         {/* Mobile Dropdown Menu */}
         {isOpen && (
           <div className="lg:hidden bg-gray-50 px-5 pb-4 space-y-4 shadow-lg">

@@ -33,7 +33,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4 lg:px-0">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 pt-5 lg:pt-0 px-4 lg:px-0">
       <div className="w-full max-w-2xl lg:max-w-3xl bg-white rounded-3xl shadow-xl p-8 lg:p-12 flex flex-col lg:flex-row overflow-hidden">
 
         {/* ----------------- Left Side (Graphic / Logo) ----------------- */}
