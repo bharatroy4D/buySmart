@@ -6,9 +6,9 @@ const BecomeSeller = () => {
     <div className="container mx-auto px-4 min-h-screen bg-gray-50 text-gray-800">
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-indigo-500 to-cyan-500 text-white mt-5 rounded py-24">
+      <section className="bg-gradient-to-r from-indigo-500 to-cyan-500 text-white mt-5 rounded py-10 lg:py-24">
         <div className="container mx-auto text-center px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-5 leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold mb-5 leading-tight">
             Become a Seller & Grow Your Business
           </h1>
 
@@ -119,7 +119,7 @@ const BecomeSeller = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-indigo-400 rounded text-white py-20 mb-5  text-center">
+      <section className="bg-indigo-400 rounded text-white py-14 lg:py-20 mb-5  text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-5">
           Ready to Start Selling?
         </h2>

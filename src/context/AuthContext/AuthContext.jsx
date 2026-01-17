@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import { createContext, useState } from "react";
 import auth from "../../firebase/firebase.init";
 
@@ -26,8 +26,14 @@ const AuthProvider = ({ children }) => {
         setUser(result.user)
         return result;
     }
+    // SignOUt user
+    const signOutUser = async () => {
+        const result = await signOut(auth);
+        setUser(null);
+        return result;
+    }
     const authInfo = {
-        user, setUser, registerUser, loginUser, googleLogin
+        user, setUser, registerUser, loginUser, googleLogin, signOutUser
     }
     return (
         <div>

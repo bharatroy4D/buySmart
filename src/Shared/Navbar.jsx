@@ -9,7 +9,8 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext/AuthContext";
 
 const Navbar = () => {
-  const { user } = useContext(AuthContext);
+  const { user, signOutUser } = useContext(AuthContext);
+  console.log(user)
   const profileRef = useRef(null);
   console.log(user);
   const [isOpen, setIsOpen] = useState(false)
@@ -79,7 +80,7 @@ const Navbar = () => {
                 <div className="relative" ref={profileRef}>
                   <img onClick={() => setOpenProfile(!openProfile)}
                     className="w-8 h-8 rounded-full hover:cursor-pointer shadow-md border border-green-600"
-                    src={user?.photoURL || "https://i.ibb.co.com/WHCV5w4/default-avatar.png"}
+                    src={user?.photoURL}
                     alt="profile"
                   />
 
@@ -106,7 +107,7 @@ const Navbar = () => {
                         <button className="text-left text-gray-800 px-2 py-1 hover:bg-gray-100 rounded">
                           Settings
                         </button>
-                        <button className="text-left px-2 py-1 bg-red-500 text-white rounded">
+                        <button onClick={signOutUser} className="text-left px-2 py-1 bg-red-500 text-white rounded">
                           Logout
                         </button>
                       </div>
@@ -129,7 +130,7 @@ const Navbar = () => {
 
 
           {/* Mobile Search (Top) */}
-          <CiSearch  onClick={() => setShowSearch(!showSearch)}  className="lg:hidden text-3xl text-white" />
+          <CiSearch onClick={() => setShowSearch(!showSearch)} className="lg:hidden text-3xl text-white" />
 
           {/* Search Input (Toggle Show/Hide) */}
           {showSearch && (
