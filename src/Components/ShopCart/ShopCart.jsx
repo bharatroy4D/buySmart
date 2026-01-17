@@ -8,7 +8,7 @@ const ShopCart = ({ cartItems = [], onClose }) => {
 
   return (
     <div className="flex justify-center items-start  p-4">
-      <div className="bg-white container mx-auto h-screen  rounded-2xl shadow-2xl overflow-hidden">
+      <div className="bg-white container mx-auto max-w-5xl h-screen  rounded-2xl shadow-2xl overflow-hidden">
 
         {/* Header */}
         <div className="flex justify-between items-center px-8 py-6 border-b bg-gray-50">

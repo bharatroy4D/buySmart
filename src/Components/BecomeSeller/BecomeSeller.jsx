@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BecomeSeller = () => {
   return (
     <div className="container mx-auto px-4 min-h-screen bg-gray-50 text-gray-800">
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-400 to-green-500 text-white py-24">
+      <section className="bg-gradient-to-r from-indigo-500 to-cyan-500 text-white mt-5 rounded py-24">
         <div className="container mx-auto text-center px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-5 leading-tight">
             Become a Seller & Grow Your Business
@@ -17,9 +18,11 @@ const BecomeSeller = () => {
           </p>
 
           <div className="mt-10 flex justify-center gap-4 flex-wrap">
-            <button className="bg-white text-red-700 px-7 py-3 font-semibold rounded-lg shadow hover:bg-gray-100 duration-300">
-              Register Now
-            </button>
+            <Link to={'/register'}>
+              <button className="bg-white text-red-700 px-7 py-3 font-semibold rounded-lg shadow hover:bg-gray-100 duration-300">
+                Register Now
+              </button>
+            </Link>
             <button className="border border-white px-7 py-3 font-semibold rounded-lg hover:bg-white hover:text-red-700 duration-300">
               Learn More
             </button>
@@ -116,7 +119,7 @@ const BecomeSeller = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-green-500 text-white py-20 text-center">
+      <section className="bg-indigo-400 rounded text-white py-20 mb-5  text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-5">
           Ready to Start Selling?
         </h2>
