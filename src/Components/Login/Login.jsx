@@ -5,7 +5,7 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 
 const Login = () => {
-  const { loginUser, googleLogin ,user, setUser} = useContext(AuthContext);
+  const { loginUser, googleLogin, user, setUser } = useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
 
   console.log(user)
@@ -15,14 +15,10 @@ const Login = () => {
     password: "",
   });
   const { email, password } = formData;
-  const handleGoogleLogin = () => {
-    googleLogin();
-  }
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
+  // manual user login
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -35,6 +31,19 @@ const Login = () => {
       console.log('login error', error.message);
     }
   };
+  // firebase google login
+  const handleGoogleLogin = async () => {
+    try {
+      const result = await googleLogin();
+      if (result) {
+        setUser(result);
+        alert("google login successful")
+        navigate('/')
+      }
+    } catch (error) {
+      console.log('google login error', error.message);
+    }
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 pt-5 lg:pt-0 px-4 lg:px-0">
@@ -90,32 +99,32 @@ const Login = () => {
               />
             </div>
 
-         {/* Password */}
-<div className="relative">
-  <label className="block text-gray-700 font-medium mb-2">
-    Password
-  </label>
+            {/* Password */}
+            <div className="relative">
+              <label className="block text-gray-700 font-medium mb-2">
+                Password
+              </label>
 
-  <input
-    type={showPassword ? "text" : "password"}
-    name="password"
-    value={formData.password}
-    onChange={handleChange}
-    placeholder="••••••••"
-    className="w-full px-5 py-3 border border-gray-300 rounded-xl
+              <input
+                type={showPassword ? "text" : "password"}
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                placeholder="••••••••"
+                className="w-full px-5 py-3 border border-gray-300 rounded-xl
                focus:outline-none focus:ring-2 focus:ring-green-500
                text-gray-900 placeholder-gray-400 transition"
-    required
-  />
+                required
+              />
 
-  {/* Eye Icon */}
-  <span
-    onClick={() => setShowPassword(!showPassword)}
-    className="absolute right-5 top-12 text-gray-600 cursor-pointer text-xl"
-  >
-    {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
-  </span>
-</div>
+              {/* Eye Icon */}
+              <span
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-5 top-12 text-gray-600 cursor-pointer text-xl"
+              >
+                {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
+              </span>
+            </div>
 
 
             {/* Extra options */}
