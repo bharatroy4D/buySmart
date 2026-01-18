@@ -11,7 +11,9 @@ import { AuthContext } from "../context/AuthContext/AuthContext";
 const Navbar = () => {
   const { user, signOutUser } = useContext(AuthContext);
   console.log(user)
-  const userName = user?.displayName.slice(0, 2).toUpperCase();
+  const userName = user?.displayName
+    ? user.displayName.slice(0, 2).toUpperCase()
+    : "US"; // fallback initials
   console.log(userName);
   const profileRef = useRef(null);
   console.log(user);
