@@ -6,7 +6,7 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const Register = () => {
   const navigate = useNavigate();
-  const { registerUser, setUser } = useContext(AuthContext);
+  const { registerUser } = useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
@@ -28,7 +28,6 @@ const Register = () => {
     e.preventDefault();
     try {
       const result = await registerUser(email, password)
-      setUser(result.user);
       console.log(result);
       alert("registration successful ")
       navigate('/login')
