@@ -51,7 +51,7 @@ const ProductView = () => {
   }
 
   return (
-    <div className="container max-w-6xl mx-auto px-5 py-12 min-h-screen">
+    <div className="container max-w-6xl mx-auto px-5 py-4 lg:py-12 min-h-screen">
       {/* Back Button */}
       <button
         onClick={() => navigate(-1)}
@@ -63,11 +63,11 @@ const ProductView = () => {
       {/* Main Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Product Image */}
-        <div className="bg-gray-50 rounded-2xl p-8 flex items-center justify-center">
+        <div className="bg-gray-50 rounded-2xl lg:p-8 flex items-center justify-center">
           <img
             src={product.images}
             alt={product.name}
-            className="w-full h-[360px] object-contain"
+            className="w-full h-60 lg:h-[360px] object-contain"
           />
         </div>
 
@@ -154,7 +154,7 @@ const ProductView = () => {
       </div>
 
       {/* Description Section */}
-      <div className="mt-16">
+      <div className=" mt-6 lg:mt-16">
         <h2 className="text-xl font-semibold mb-3">
           Product Details
         </h2>
@@ -165,11 +165,13 @@ const ProductView = () => {
           It is suitable for daily use and designed to meet modern
           lifestyle needs. Perfect choice for both personal use and
           gifting.
-          ensure durability, comfort, and long-lasting performance.
-          It is suitable for daily use and designed to meet modern
-          lifestyle needs. Perfect choice for both personal use and
-          gifting.
-         
+          <span className="hidden lg:block">
+            ensure durability, comfort, and long-lasting performance.
+            It is suitable for daily use and designed to meet modern
+            lifestyle needs. Perfect choice for both personal use and
+            gifting.
+          </span>
+
         </p>
       </div>
     </div>

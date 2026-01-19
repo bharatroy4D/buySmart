@@ -11,10 +11,6 @@ import { AuthContext } from "../context/AuthContext/AuthContext";
 const Navbar = () => {
   const { user, signOutUser } = useContext(AuthContext);
   console.log(user)
-  const userName = user?.displayName
-    ? user.displayName.slice(0, 2).toUpperCase()
-    : "US"; // fallback initials
-  console.log(userName);
   const profileRef = useRef(null);
   console.log(user);
   const [isOpen, setIsOpen] = useState(false)
@@ -85,7 +81,7 @@ const Navbar = () => {
                   <img onClick={() => setOpenProfile(!openProfile)}
                     className="w-8 h-8 rounded-full hover:cursor-pointer shadow-md border border-green-600"
                     src={user?.photoURL}
-                    alt={userName}
+                    alt="profile"
                   />
 
                   {/* Profile Popup */}
@@ -96,7 +92,7 @@ const Navbar = () => {
                         <img
                           className="w-10 h-10 rounded-full"
                           src={user?.photoURL}
-                          alt={userName}
+                          alt="profile"
                         />
                         <div>
                           <h4 className="text-sm text-center font-semibold text-black">{user?.displayName}</h4>

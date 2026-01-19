@@ -61,14 +61,13 @@ const MainProducts = ({ category }) => {
                        transition-all duration-300"
           >
             {/* Image */}
-            <div className="relative bg-gray-50 h-44 flex items-center justify-center">
+            <div className="relative bg-gray-50 p-5 flex items-center justify-center ">
               <img
                 src={product.images}
                 alt={product.name}
-                className="h-32 object-contain transition-transform duration-300
+                className="h-32 object-contain transition-transform  duration-300
                            group-hover:scale-105"
               />
-
               <span
                 className="absolute top-2 right-2 bg-green-600 text-white
                            text-[11px] font-medium px-2 py-1 rounded"
@@ -76,10 +75,9 @@ const MainProducts = ({ category }) => {
                 -{product.discount}% OFF
               </span>
             </div>
-
             {/* Content */}
-            <div className="p-4 flex flex-col h-[155px]">
-              <h3 className="text-sm font-semibold text-gray-800 leading-tight">
+            <div className="p-4 flex flex-col ">
+              <h3 className="text-sm font-semibold text-gray-800 pb-2 leading-tight">
                 {product.name.length > 22
                   ? product.name.slice(0, 22) + "..."
                   : product.name}

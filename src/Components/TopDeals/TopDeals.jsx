@@ -12,7 +12,7 @@ const TopDeals = () => {
 
   return (
     <div className="container px-5 mx-auto py-6">
-      <h2 className="text-2xl font-semibold mb-6">Top Deals</h2>
+      <h2 className="text-2xl font-semibold mb-6 mt-5">Top Deals</h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-5">
         {products.slice(0, 6).map((product) => (
